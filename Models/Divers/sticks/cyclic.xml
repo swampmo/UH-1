@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>cyclic.ac</path>
+
+<animation>
+		<type>rotate</type>
+		<object-name>mesh2</object-name>
+		<object-name>mesh22</object-name>
+		<object-name>mesh26</object-name>
+		<object-name>mesh24</object-name>
+		<object-name>mesh21</object-name>
+		<object-name>mesh27</object-name>
+		<object-name>mesh3</object-name>
+		<object-name>mesh4</object-name>
+		<object-name>mesh6.001</object-name>
+		<object-name>mesh16.001</object-name>
+		<object-name>mesh16</object-name>
+		<object-name>mesh15</object-name>
+		<object-name>mesh14</object-name>
+		<object-name>mesh18</object-name>
+		<object-name>mesh27.001</object-name>
+		<object-name>mesh12</object-name>
+		<object-name>mesh11</object-name>
+		<object-name>mesh9</object-name>
+		<object-name>mesh20</object-name>
+		
+		<property>controls/flight/elevator</property>
+		<factor>15</factor>
+		<center>
+			<x-m>-0.05</x-m>
+			<y-m>0</y-m>
+			<z-m>0.15</z-m>
+		</center>
+		<axis><y>-1</y></axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>mesh2</object-name>
+		<object-name>mesh22</object-name>
+		<object-name>mesh26</object-name>
+		<object-name>mesh24</object-name>
+		<object-name>mesh21</object-name>
+		<object-name>mesh27</object-name>
+		<object-name>mesh3</object-name>
+		<object-name>mesh4</object-name>
+		<object-name>mesh6.001</object-name>
+		<object-name>mesh16.001</object-name>
+		<object-name>mesh16</object-name>
+		<object-name>mesh15</object-name>
+		<object-name>mesh14</object-name>
+		<object-name>mesh18</object-name>
+		<object-name>mesh27.001</object-name>
+		<object-name>mesh12</object-name>
+		<object-name>mesh11</object-name>
+		<object-name>mesh9</object-name>
+		<object-name>mesh20</object-name>
+		<property>controls/flight/aileron</property>
+		<factor>15</factor>
+		<center>
+			
+			<x-m>-0.05</x-m>
+			<y-m>0</y-m>
+			<z-m>0.15</z-m>
+		
+		</center>
+		<axis><x>-1</x></axis>
+	</animation>
+	
+
+
+</PropertyList>
+

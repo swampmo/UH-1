@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<!--VIEWS-->
+<sim include="Systems/views.xml">
+
+<description>Bell UH 1 "Huey"</description>
+<author>BARANGER Emmanuel (FMD/3D), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound) StuartC </author>
+<status>alpha</status>
+
+<license>GPL v2</license>
+<fuel-fraction>1</fuel-fraction>
+
+<!--MODEL-->
+<model>
+
+<uh1>
+<state type="int">0</state>
+<engine type="float">0</engine>
+<rotor-step-deg type="float">-1</rotor-step-deg>
+</uh1>
+</model>
+
+<rating>
+<FDM type="int">     3 </FDM>
+<systems type="int"> 2 </systems>
+<cockpit type="int"> 2 </cockpit>
+<model type="int">   4 </model>
+</rating>
+
+<!--SOUND-->
+<sound>
+<path>Aircraft/UH-1/Sounds/uh1-sound.xml</path>
+</sound>
+
+<!--SUBMODELS-->
+<submodels>
+<serviceable type="bool">true</serviceable>
+<path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
+ <path>Aircraft/UH-1/Models/payload/loads.xml</path>
+</submodels>
+
+<!--MULTIPLAY-->
+<multiplay n="0">
+<generic n="0">
+<string n="2" type="string">412</string>
+
+<!-- Nav lights on -->
+  <int n="0" alias="/controls/switches/nav-lights-switch" />
+      <!-- Beacon on -->
+  <int n="1" alias="/controls/switches/beacon-switch" />
+      <!-- Landing lights on -->
+  <int n="2" alias="/controls/switches/landing-lights-switch" />
+	    <!-- Taxi light on -->
+  <int n="3" alias="/controls/switches/strobe-switch" />
+   <!-- Crashed -->
+
+<int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+<int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+  <int n="7" alias="/sim/crashed" />
+<int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+<!-- doors -->
+<float n="0" alias="/instrumentation/doors/pilot"/>
+<float n="1" alias="/instrumentation/doors/copilot"/>
+<float n="2" alias="/instrumentation/doors/leftchief"/>                     
+<float n="3" alias="/instrumentation/doors/rightchief"/>                    
+<float n="4" alias="/instrumentation/doors/leftslide"/>
+<float n="5" alias="/instrumentation/doors/rightslide"/>
+<!-- -->
+<float n="10" alias="/sim/model/turret-positions/turretx"/><!-- Searchlight over MP -->
+<float n="11" alias="/sim/model/turret-positions/turretz"/><!-- searchlight over MP -->
+<string alias="/sim/weight[5]/selected" n="1"/> <!-- Payload over multiplayer -->
+</generic>
+</multiplay>
+
+<!--WEIGHT-->
+<weight n="0">
+<name>Pilot</name>
+<weight-lb>180</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="1">
+<name>Co-Pilot</name>
+<weight-lb>180</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="2">
+<name>Right Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="3">
+<name>Middle Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="4">
+<name>Left Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="5">
+<name>Load</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+
+<opt>
+<name>sprayer</name>
+<lbs>1220</lbs>
+</opt>
+
+<opt>
+<name>luggage</name>
+<lbs>800</lbs>
+</opt>
+
+<opt>
+<name>sar</name>
+<lbs>350</lbs>
+</opt>
+
+<opt>
+<name>guns</name>
+<lbs>1000</lbs>
+</opt>
+
+</weight>
+
+<!--HELPMENU-->
+<help include="Systems/help.xml"/>
+<!--HELPMENU-->
+
+<!--FLIGHTRECORDER-->
+<flight-recorder>
+<replay-config type="int">0</replay-config>
+<config n="0" include="/Aircraft/Generic/flightrecorder/generic-helicopter.xml">
+
+<!-- Add some custom properties -->
+<signal>
+<type>int</type>
+<property type="string">/sim/model/uh1/state</property>
+</signal>
+<signal>
+<type>int</type>
+<property type="string">/controls/engines/engine/magnetos</property>
+</signal>
+</config>
+</flight-recorder>
+
+<menubar include="Dialogs/uh1-menu.xml"/>
+
+</sim>
+
+<!--CONTROLS-->
+<controls>
+<engines>
+<engine n="0">
+<magnetos>0</magnetos>
+</engine>
+</engines>
+<gear>
+<brake-parking>1</brake-parking>
+</gear>
+<rotor>
+<reltarget>1</reltarget>
+<maxreltorque>1</maxreltorque>
+</rotor>
+<armament>
+<trigger>0</trigger>
+<trigger1>0</trigger1>
+<trigger2>0</trigger2>
+</armament>
+<luggage type="bool">false</luggage>
+</controls>
+
+<!--INSTRUMENTATION-->
+<instrumentation>
+<cdu>  <serviceable type="bool">true</serviceable>
+<enabled type="bool">true</enabled></cdu>
+<gsdi>
+<serviceable type="bool">true</serviceable>
+<enabled type="bool">true</enabled>
+</gsdi>
+</instrumentation>
+
+<!--INPUT-->
+<input>
+<keyboard include="Systems/uh1-keyboard.xml"/>
+</input>
+
+<!--ROTORS-->
+<rotors>
+<main>
+<rpm type="double">0</rpm>
+<cone-deg type="double">0</cone-deg>
+<cone1-deg type="double">0</cone1-deg>
+<cone2-deg type="double">0</cone2-deg>
+<cone3-deg type="double">0</cone3-deg>
+<cone4-deg type="double">0</cone4-deg>
+</main>
+<bar>
+<roll-deg type="float">0</roll-deg>
+<yaw-deg type="float">0</yaw-deg>
+</bar>
+<bar2>
+<roll-deg type="float">0</roll-deg>
+<yaw-deg type="float">0</yaw-deg>
+</bar2>
+</rotors>
+
+<!--SYSTEMS-->
+<systems>
+<electrical>
+<outputs>
+<panel-dim type="float">1.0</panel-dim>
+<search-light type="bool">true</search-light>
+<cabin-dim type="float">1.0</cabin-dim>
+<comm type="float">8.0</comm>
+<comm1 type="float">8.0</comm1>
+<dash-lights type="float">1.0</dash-lights>
+<rem-lights type="float">1.0</rem-lights>
+<overhead-dim type="float">1.0</overhead-dim>
+<dash-dim type="float">1.0</dash-dim>
+<switch1 type="bool"></switch1>
+</outputs>
+<suppliers>
+<battery type="float">1.0</battery>
+</suppliers>
+</electrical>
+</systems>
+
+<!--ORIENTATION-->
+<orientation>
+<roll-rate-degps type="float">0</roll-rate-degps>
+</orientation>
+
+<b707>
+<ess-bus type="float">24</ess-bus>
+</b707>
+
+
+
+</PropertyList>

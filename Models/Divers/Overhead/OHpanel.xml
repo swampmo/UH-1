@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Boeing 717-200 for FlightGear -->
+<!-- Overhead Panel -->
+
+<PropertyList>
+
+<path>OHpanel.ac</path>
+
+
+<animation>
+<type>material</type>
+<object-name>OHpanel</object-name>
+<emission>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+<red>0.3</red>
+<green>0.3</green>
+<blue>0.3</blue>
+</emission>
+</animation>
+
+
+
+
+
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+<offsets>
+<x-m> -0.001 </x-m>
+<y-m>  0.22</y-m>
+<z-m>  -0.25</z-m>
+<roll-deg>    0 </roll-deg>
+<pitch-deg>    0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+<offsets>
+<x-m> -0.001 </x-m>
+<y-m>  -0.22</y-m>
+<z-m>  -0.25</z-m>
+<roll-deg>    0 </roll-deg>
+<pitch-deg>    0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+
+
+
+
+
+
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Switch/instr-lights.xml</path>
+<offsets>
+<x-m> 0.001 </x-m>
+<y-m>  -0.02 </y-m>
+<z-m>  -0.29 </z-m>
+<roll-deg>      0 </roll-deg>
+<pitch-deg>   -0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/nav.xml</path>
+<offsets>
+<x-m> 0.001 </x-m>
+<y-m>  -0.06 </y-m>
+<z-m>  -0.29 </z-m>
+<roll-deg>      0 </roll-deg>
+<pitch-deg>   -0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/beacon.xml</path>
+<offsets>
+<x-m> 0.001 </x-m>
+<y-m>  -0.06 </y-m>
+<z-m>  -0.265 </z-m>
+<roll-deg>      0 </roll-deg>
+<pitch-deg>   -0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
+<offsets>
+<x-m> 0.001 </x-m>
+<y-m>  -0.1 </y-m>
+<z-m>  -0.29 </z-m>
+<roll-deg>      0 </roll-deg>
+<pitch-deg>   -0 </pitch-deg>
+<heading-deg>   0 </heading-deg>
+</offsets>
+</model>
+
+<animation>
+    <type>select</type>
+    <object-name>NoseGearLandinglight</object-name>
+    <object-name>Taxi-Light-Left</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/landing-lights-switch</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation> 	
+  
+  	<animation>
+    <type>select</type>
+    <object-name>GreenLightFlare</object-name>
+    <object-name>GreenLightRemb</object-name>
+	 <object-name>RedLightFlare</object-name>
+    <object-name>RedLightRemb</object-name>
+	<object-name>WhiteLightFlare</object-name>
+    <object-name>WhiteLightRemb</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/nav-lights-switch</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation> 	
+  
+  	<animation>
+    <type>select</type>
+     <object-name>BeaconFlare</object-name>
+    <object-name>BeaconRemb</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/beacon-switch</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation> 	
+
+
+</PropertyList>

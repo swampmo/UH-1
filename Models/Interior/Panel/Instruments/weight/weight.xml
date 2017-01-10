@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>weight.ac</path>
+
+   
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+  
+    <emission>
+        <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+    </emission>
+  </animation>
+  
+  <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+ <object-name>lampeV1</object-name>
+	   <object-name>lampeV2</object-name>
+       <object-name>lampeV3</object-name>
+       <object-name>lampeV4</object-name>
+       <object-name>lampeJ</object-name>
+      
+      
+</effect>
+
+
+ <animation>
+  <type>material</type>
+  <object-name>weight5</object-name>
+  
+  <ambient>
+    <red>0.0</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+ 
+ <animation>
+  <type>material</type>
+  <object-name>weight1</object-name>
+  <object-name>weight2</object-name>
+  <object-name>weight3</object-name>
+  <object-name>weight4</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.0</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.0</red>
+    <green>0.8</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+ 
+ 
+ 
+ 
+ <text>
+  <name>weight1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.054</character-size>
+  <offsets>
+  <x-m>0.025</x-m>
+  <y-m>-0.0045</y-m>
+  <z-m>0.038</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+ <animation>
+        <type>select</type>
+        <object-name>weight1</object-name>
+        
+        <condition>
+			<greater-than>
+				<property>/yasim/gross-weight-lbs</property>
+						<value>9320</value>
+					</greater-than>
+					
+			</condition>
+    </animation>
+
+	
+ <text>
+  <name>weight2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.054</character-size>
+  <offsets>
+  <x-m>0.025</x-m>
+  <y-m>-0.0045</y-m>
+  <z-m>0.026</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+  <animation>
+        <type>select</type>
+        <object-name>weight2</object-name>
+        
+        <condition>
+			<greater-than>
+				<property>/yasim/gross-weight-lbs</property>
+						<value>9696</value>
+					</greater-than>
+					
+			</condition>
+    </animation>
+	
+	
+<text>
+  <name>weight3</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.054</character-size>
+  <offsets>
+  <x-m>0.025</x-m>
+  <y-m>-0.0045</y-m>
+  <z-m>0.012</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+
+
+<animation>
+        <type>select</type>
+        <object-name>weight3</object-name>
+        
+        <condition>
+			<greater-than>
+				<property>/yasim/gross-weight-lbs</property>
+						<value>10072</value>
+					</greater-than>
+					
+			</condition>
+    </animation> 
+	
+<text>
+  <name>weight4</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.054</character-size>
+  <offsets>
+  <x-m>0.025</x-m>
+  <y-m>-0.0045</y-m>
+  <z-m>-0.003</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <animation>
+        <type>select</type>
+        <object-name>weight4</object-name>
+        
+        <condition>
+			<greater-than>
+				<property>/yasim/gross-weight-lbs</property>
+						<value>10448</value>
+					</greater-than>
+					
+			</condition>
+    </animation> 
+	
+	<text>
+  <name>weight5</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.054</character-size>
+  <offsets>
+  <x-m>0.025</x-m>
+  <y-m>-0.0045</y-m>
+  <z-m>-0.027</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <animation>
+        <type>select</type>
+        <object-name>weight5</object-name>
+        
+        <condition>
+			<greater-than>
+				<property>/yasim/gross-weight-lbs</property>
+						<value>11000</value>
+					</greater-than>
+					
+			</condition>
+    </animation> 
+
+</PropertyList>

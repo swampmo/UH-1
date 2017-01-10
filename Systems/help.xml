@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Bell UH 1 "Huey",212 "Twin Huey", 412 "Griffen"</title>
+  <line>______________________________________________</line>
+  <line></line>
+  <line>To open and close the doors just click on it!</line>
+   <line>Configuring your Helicopter</line>
+	  <line>Use the Huey Configuration Menu</line>
+      <line>This menu lets you select the aircraft livery, but also has a few pre configured </line>
+      <line>mission specific configuration settings. ***NOTE*** Not all fit every aircraft.</line>
+     <line></line>
+	  <line>When using any  pre set configuration, please manually select any item again</line>
+	   <line>in the standard Equipment/Loadout menu to calculate the correct weight of your</line>
+	    <line>configured Helicopter.</line>
+		
+    
+  <key>
+    <name>Delete</name>
+    <desc>Fire the miniguns</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Sprayer ( only when fitted )</desc>
+  </key>
+  <key>
+    <name>[</name>
+    <desc>port side Fire rockets</desc>
+  </key>
+  <key>
+    <name>]</name>
+    <desc>starboard side Fire rockets</desc>
+  </key>
+  <key>
+    <name>N</name>
+    <desc>Toggle rotor brake</desc>
+  </key>
+  <key>
+    <name>n</name>
+    <desc>Apply rotor brake</desc>
+  </key>
+  <key>
+    <name>}</name>
+    <desc>Start Engines</desc>
+  </key>
+  <key>
+    <name>{</name>
+    <desc>Shutdown Engines</desc>
+  </key>
+  
+  
+	     
+   <key>
+        <name>w</name>
+        <desc>Rotate Searchlight Up</desc>
+      </key>
+      <key>
+        <name>a</name>
+        <desc>Rotate Searchlight Left</desc>
+      </key>
+      <key>
+        <name>s</name>
+        <desc>Rotate Searchlight Down</desc>
+      </key>
+      <key>
+        <name>d</name>
+        <desc>Rotate Searchlight Right</desc>
+      </key>    
+
+<line>WEAPONS</line>
+<line>The Miniguns carry 1000 rounds of ammo each.</line>
+<line>Each rocket pod carries 7 rockets</line>
+<line>Weapons can be reloaded by using the Huey Configuration menu.</line>	  
+  
+  
+</PropertyList>

@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>500</max-m>
+    </animation>
+
+<model>
+		<name>Pylons</name>
+		<path>Aircraft/UH-1/Models/payload/pylons.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+
+<!-- Cargo -->
+
+	<model>
+		<name>sprayer</name>
+		<path>Aircraft/UH-1/Models/Divers/Sprayer/sprayer.xml</path>
+		<offsets>
+			<x-m> -6.053 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m> -1.705 </z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>sprayer</object-name>      
+    <condition>
+      <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>sprayer</value>
+        </equals>
+       
+    </condition>
+  </animation>			
+
+  <model>
+		<name>luggage</name>
+		<path>Aircraft/UH-1/Models/payload/passenger.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>0 </z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>luggage</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>luggage</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+  <model>
+		<name>sar</name>
+		<path>Aircraft/UH-1/Models/payload/sar.xml</path>
+		<offsets>
+			<x-m> -0 </x-m>
+            <y-m>  0.03387 </y-m>
+            <z-m> -0.1 </z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>sar</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>sar</value>
+        </equals>
+       
+    </condition>
+  </animation>
+  
+  <model>
+		<name>guns</name>
+		<path>Aircraft/UH-1/Models/Divers/guns/guns.xml</path>
+		<offsets>
+			<x-m> -4.162 </x-m>
+            <y-m>  0.000 </y-m>
+            <z-m> -1.490 </z-m>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>0</heading-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>guns</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[1]</property>
+          <value>guns</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+
+  
+  
+  
+  <animation>
+  <type>select</type>
+  <object-name>pylon.C</object-name>  
+  <condition>
+  <or>
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>sprayer</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>luggage</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>sar</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>guns</value>
+   </equals>
+  
+   
+   
+  </or>
+  </condition>
+ </animation>
+
+</PropertyList>

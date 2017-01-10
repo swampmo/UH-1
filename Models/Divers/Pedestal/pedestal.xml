@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>pedestal.ac</path>
+
+<animation>
+<type>material</type>
+<object-name>board</object-name>
+<object-name>board.001</object-name>
+<object-name>board2</object-name>
+<object-name>board2.001</object-name>
+<object-name>board2.002</object-name>
+<object-name>board2.003</object-name>
+<object-name>board3</object-name>
+<object-name>board3.001</object-name>
+<object-name>board3.002</object-name>
+<object-name>board3.003</object-name>
+<object-name>board4</object-name>
+<object-name>board4.001</object-name>
+<emission>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+<red>   1 </red>
+<green> 1 </green>
+<blue>  1 </blue>
+</emission>
+</animation>
+
+</PropertyList>

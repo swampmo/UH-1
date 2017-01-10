@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>searchlight.ac</path>
+
+  
+   <model>
+    <name>LandingLight2</name>
+    <path>Aircraft/UH-1/Models/Lights/LandingLight.xml</path>
+    <offsets>
+      <x-m>-0.27</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.35</z-m>
+      <pitch-deg>-5.7</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <!-- rotation animation -->
+  
+  <animation>
+<type>rotate</type>
+
+<object-name>searchlight_lamp</object-name>
+<object-name>lens</object-name>
+<object-name>LandingLight2</object-name>
+<property>sim/model/turret-positions/turretz</property>
+<factor>1</factor>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+<center>
+<x-m>-0.075</x-m>
+<y-m>0.005</y-m>
+<z-m>-0.1</z-m>
+</center>
+</animation>
+
+
+<animation>
+<type>rotate</type>
+<object-name>searchlight_frame</object-name>
+<object-name>searchlight_lamp</object-name>
+<object-name>lens</object-name>
+<object-name>LandingLight2</object-name>
+<property>sim/model/turret-positions/turretx</property>
+<factor>1</factor>
+<axis>
+<x>0</x>
+<y>0</y>
+<z>1</z>
+</axis>
+<center>
+<x-m>-0.075</x-m>
+<y-m>0.005</y-m>
+<z-m>-0.3</z-m>
+</center>
+</animation>
+
+</PropertyList>

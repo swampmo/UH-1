@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>uh1.ac</path>
+<animation>
+<!-- Objets opaques -->
+<object-name>fuselage</object-name>
+<object-name>elevatortrim</object-name>
+<object-name>frontdoorleft</object-name>
+<object-name>frontdoorright</object-name>
+<object-name>sidedoorleft</object-name>
+<object-name>sidedoorright</object-name>
+<object-name>slidedoorleft</object-name>
+<object-name>slidedoorright</object-name>
+<object-name>wirecutter_down</object-name>
+<object-name>wirecutter_up</object-name>
+<object-name>air</object-name>
+<object-name>skid</object-name>
+<object-name>skid2</object-name>
+<object-name>leftside</object-name>
+<object-name>rightside</object-name>
+<object-name>leftslide</object-name>
+<object-name>rightslide</object-name>
+<object-name>supportlampes</object-name>
+
+<object-name>attaches</object-name>
+<object-name>RHwiper</object-name>
+<object-name>LHwiper</object-name>
+<object-name>charnieres</object-name>
+<object-name>frontcharnieres</object-name>
+<object-name>trous</object-name>
+
+<!-- Objets transparents -->
+<object-name>vitres</object-name>
+<object-name>frontdoorglasleft</object-name>
+<object-name>frontdoorglasright</object-name>
+<object-name>sidedoorglasleft</object-name>
+<object-name>sidedoorglasright</object-name>
+<object-name>slidedoorglasleft</object-name>
+<object-name>slidedoorglasright</object-name>
+<object-name>beacon</object-name>
+<object-name>taillighttrs</object-name>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>fuselage</object-name>
+<object-name>elevatortrim</object-name>
+<object-name>frontdoorleft</object-name>
+<object-name>frontdoorright</object-name>
+<object-name>sidedoorleft</object-name>
+<object-name>sidedoorright</object-name>
+<object-name>slidedoorleft</object-name>
+<object-name>slidedoorright</object-name>
+<object-name>wirecutter_down</object-name>
+<object-name>wirecutter_up</object-name>
+<object-name>air</object-name>
+<object-name>skid</object-name>
+<object-name>skid2</object-name>
+<object-name>leftside</object-name>
+<object-name>rightside</object-name>
+<object-name>leftslide</object-name>
+<object-name>rightslide</object-name>
+<object-name>supportlampes</object-name>
+<object-name>attaches</object-name>
+<object-name>RHwiper</object-name>
+<object-name>LHwiper</object-name>
+<object-name>charnieres</object-name>
+<object-name>frontcharnieres</object-name>
+<object-name>trous</object-name>
+
+<property-base>sim/model/livery</property-base>
+<texture-prop>texture</texture-prop>
+<texture>texture.png</texture>
+
+</animation>
+
+
+
+
+<!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitres</object-name>
+<object-name>frontdoorglasleft</object-name>
+<object-name>frontdoorglasright</object-name>
+<object-name>sidedoorglasleft</object-name>
+<object-name>sidedoorglasright</object-name>
+<object-name>slidedoorglasleft</object-name>
+<object-name>slidedoorglasright</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitres</object-name>
+<object-name>frontdoorglasleft</object-name>
+<object-name>frontdoorglasright</object-name>
+<object-name>sidedoorglasleft</object-name>
+<object-name>sidedoorglasright</object-name>
+<object-name>slidedoorglasleft</object-name>
+<object-name>slidedoorglasright</object-name>
+</animation>
+
+
+
+ <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+ <object-name>vitres</object-name>
+	   <object-name>frontdoorglasleft</object-name>
+       <object-name>frontdoorglasright</object-name>
+       <object-name>sidedoorglasleft</object-name>
+       <object-name>sidedoorglasright</object-name>
+       <object-name>slidedoorglasleft</object-name>
+       <object-name>slidedoorglasright</object-name>
+       <object-name>vitresint</object-name>
+       <object-name>frontdoorglasleftint</object-name>
+       <object-name>sidedoorglasleftint</object-name>
+       <object-name>slidedoorglasleftint</object-name>
+       <object-name>frontdoorglasrighint</object-name>
+       <object-name>sidedoorglasrightint</object-name>
+       <object-name>slidedoorglasrighint</object-name>
+	   
+	   <object-name>propblur1</object-name>
+       <object-name>propblur2</object-name>
+       <object-name>propblur3</object-name>
+       <object-name>propblur4</object-name>
+       <object-name>propdisc1</object-name>
+       <object-name>propdisc2</object-name>
+       <object-name>propdisc3</object-name>
+       <object-name>propdisc4</object-name>
+       <object-name>propblur</object-name>
+       <object-name>propdisc</object-name>
+      
+</effect>
+
+
+<!-- Removes reflective glass on internal views -->
+   <animation>
+        <type>select</type>
+       <object-name>vitres</object-name>
+	   <object-name>frontdoorglasleft</object-name>
+       <object-name>frontdoorglasright</object-name>
+       <object-name>sidedoorglasleft</object-name>
+       <object-name>sidedoorglasright</object-name>
+       <object-name>slidedoorglasleft</object-name>
+       <object-name>slidedoorglasright</object-name>
+       <object-name>vitresint</object-name>
+       <object-name>frontdoorglasleftint</object-name>
+       <object-name>sidedoorglasleftint</object-name>
+       <object-name>slidedoorglasleftint</object-name>
+       <object-name>frontdoorglasrighint</object-name>
+       <object-name>sidedoorglasrightint</object-name>
+       <object-name>slidedoorglasrighint</object-name>
+
+		<condition>
+            <not>
+            <property>sim/current-view/internal</property>
+            </not>
+        </condition>
+    </animation>
+
+
+
+<!--Working For Rembrandt-->
+
+
+
+<!--  DO NOT USE THIS ON REMBRANDT AIRCRAFT. They glow in the  dark 
+
+
+<effect>
+<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+<object-name>fuselage</object-name>
+<object-name>elevatortrim</object-name>
+<object-name>frontdoorleft</object-name>
+<object-name>frontdoorright</object-name>
+<object-name>sidedoorleft</object-name>
+<object-name>sidedoorright</object-name>
+<object-name>slidedoorleft</object-name>
+<object-name>slidedoorright</object-name>
+<object-name>wirecutter_down</object-name>
+<object-name>wirecutter_up</object-name>
+<object-name>air</object-name>
+<object-name>skid</object-name>
+<object-name>skid2</object-name>
+<object-name>leftside</object-name>
+<object-name>rightside</object-name>
+<object-name>leftslide</object-name>
+<object-name>rightslide</object-name>
+<object-name>supportlampes</object-name>
+</effect>
+-->
+
+
+ <!-- payloads -->
+<model>
+<path>Aircraft/UH-1/Models/payload/loads.xml</path>
+<offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+</model> 
+
+
+
+
+<!-- Gouverne de profondeur -->
+<animation>
+<type>rotate</type>
+<object-name>elevatortrim</object-name>
+<property>surface-positions/elevator-pos-norm</property>
+<interpolation>
+<entry><ind> -0.75 </ind><dep>  -1.5 </dep></entry>
+<entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+<entry><ind>  0.75 </ind><dep>   1.5 </dep></entry>
+</interpolation>
+<center>
+<x-m>  1.201 </x-m>
+<y-m>  0.000 </y-m>
+<z-m> -0.106 </z-m>
+</center>
+<axis>
+<x> 0 </x>
+<y> 1 </y>
+<z> 0 </z>
+</axis>
+</animation>
+
+
+
+ <animation>
+        <type>select</type>
+        <object-name>pilot1</object-name>
+		<object-name>pilot2</object-name>
+		<condition>
+         <not>
+            <property>sim/current-view/internal</property>
+         </not>
+        </condition>
+    </animation>	
+                               
+</PropertyList>

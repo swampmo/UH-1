@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ########################################
+
+ # DR400-dauphin by PAF team
+ # April 2012 : Modified by PAF team
+ # http://equipe-flightgear.forumactif.com
+
+##########################################-->
+
+<!-- Christian Thiriot "Patten"Mars 2012 quelques propriétés à affiner-->
+<PropertyList>
+
+  <path>warning.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>box01</object-name>
+    <object-name>box02</object-name>
+    <object-name>box03</object-name>
+    <object-name>box04</object-name>
+    <object-name>box05</object-name>
+    <object-name>box06</object-name>
+    <object-name>box07</object-name>
+    <object-name>box08</object-name>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!--<effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
+  </effect>-->
+  
+  <!-- Alarme visuelle pression huile-->
+  <!-- Allumé si pression d'huile inférieur à 14PSI -->
+  <animation>
+    <type>select</type>
+    <object-name>warning01.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <less-than-equals>
+            <property>engines/engine/oil-pressure-psi</property>
+            <value> 14 </value> 
+          </less-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Alarme visuelle pression essence -->
+  <!-- Allumé si pression carburant inférieur à 1.1PSI-->
+  <animation>
+    <type>select</type>
+    <object-name>warning02.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <less-than-equals>
+            <property>engines/engine/fuel-pressure-psi</property>
+            <value> 1.1 </value> 
+          </less-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Alarmes fuel 1 litre= 0.264172052 gallons -->
+  <!-- Allumé si quantité carburant inférieur à 10 litres -->
+  <animation>
+    <type>select</type>
+    <object-name>warning03.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <property>consumables/fuel/fuel-low</property>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+   
+  <!-- Alarme visuelle décharge batterie-->
+  <!-- Allumé si le moteur tourne pas et/ou l'alternateur non engagé -->
+  <animation>
+    <type>select</type>
+    <object-name>warning04.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <not><property>engines/engine/running</property></not>
+          <not><property>controls/engines/engine/master-alt</property></not>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Demarreur -->
+  <!-- Allumé si tension démarreur supérieur à 8V-->
+  <animation>
+    <type>select</type>
+    <object-name>warning05.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>systems/electrical/outputs/starter</property>
+            <value> 8 </value>
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Alarme visuelle volets -->
+  <!-- Allumé si volet(s) sorti -->
+  <animation>
+    <type>select</type>
+    <object-name>warning06.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>surface-positions/flap-pos-norm</property>
+            <value> 0.06 </value>
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Pitot-->
+  <!-- Allumé si tension pitot supérieur à 8V -->
+  <animation>
+    <type>select</type>
+    <object-name>warning07.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>systems/electrical/outputs/pitot</property>
+            <value> 8 </value> 
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+   <animation>
+    <type>material</type>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <emission>
+      <red>   0 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
+  
+   <animation>
+    <type>material</type>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
+    <condition>
+      <or>
+        <not><property>controls/lighting/warning-mode</property></not>
+        <property>controls/lighting/warning-test</property>
+      </or>
+    </condition>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.035 </green>
+      <blue>  0.035 </blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
+    </emission>
+  </animation>
+
+   <animation>
+    <type>material</type>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
+    <condition>
+      <property>controls/lighting/warning-mode</property>
+    </condition>
+    <emission>
+      <red>   0.012 </red>
+      <green> 0.012 </green>
+      <blue>  0.012 </blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+
+

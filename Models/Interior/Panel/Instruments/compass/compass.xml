@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>compass.ac</path>
+
+<animation>
+<object-name>fond</object-name>
+<object-name>face</object-name>
+<object-name>lubber</object-name>
+
+
+</animation>
+<!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>vitre</object-name>
+</animation>
+<!--Working For Rembrandt-->
+
+
+<animation>
+<type>material</type>
+<object-name>fond</object-name>
+
+<emission>
+<red>1.0</red>
+<green>1.0</green>
+<blue>1.0</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+</emission>
+</animation>
+
+
+
+
+<animation>
+<type>material</type>
+<object-name>face</object-name>
+<object-name>lubber</object-name>
+<emission>
+<red>   1.0 </red>
+<green> 1.0 </green>
+<blue>  1.0 </blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
+</emission>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>face</object-name>
+<property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+<axis>
+<x> 1 </x>
+<y> 0 </y>
+<z> 0 </z>
+</axis>
+</animation>
+
+</PropertyList>

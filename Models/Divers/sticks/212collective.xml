@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>212-collective.ac</path>
+	
+  
+
+ <animation>
+    <name>CollectiveComplet</name>
+   <object-name>mesh56.001</object-name>
+    <object-name>mesh55.001</object-name>
+    <object-name>mesh52.001</object-name>
+    <object-name>mesh32</object-name>
+    <object-name>mesh30</object-name>
+	<object-name>mesh33</object-name>
+	<object-name>mesh37</object-name>
+	<object-name>mesh42</object-name>
+	<object-name>mesh51</object-name>
+	<object-name>mesh42.001</object-name>
+	<object-name>mesh39.006</object-name>
+	<object-name>mesh39.008</object-name>
+	<object-name>mesh49.008</object-name>
+	<object-name>mesh49.009</object-name>
+	<object-name>mesh39.011</object-name>
+	<object-name>mesh39.009</object-name>
+	<object-name>mesh49.010</object-name>
+	<object-name>mesh49.011</object-name>
+	<object-name>mesh45.002</object-name>
+	<object-name>mesh49.013</object-name>
+	<object-name>mesh39.007</object-name>
+	<object-name>mesh39.010</object-name>
+	<object-name>mesh49.012</object-name>
+	<object-name>mesh44.001</object-name>
+	
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CollectiveComplet</object-name>
+    <property>rotors/main/blade[0]/incidence-deg</property>
+    <factor> 2 </factor>
+    <offsets>
+      <x-m>  0.03 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 0.05</z-m>
+    </offsets>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>212.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>background</object-name>
+    <object-name>fond</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+

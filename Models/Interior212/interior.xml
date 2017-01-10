@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>interior.ac</path>
+
+<animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>300</max-m>
+ </animation>
+
+<animation>
+<!-- Objets opaques -->
+<object-name>interieur</object-name>
+<object-name>floor1</object-name>
+<object-name>floor2</object-name>
+<object-name>ajout</object-name>
+<object-name>wall1</object-name>
+<object-name>frontdoorlint</object-name>
+<object-name>frontdoorrint</object-name>
+<object-name>sidedoorintr</object-name>
+<object-name>sidedoorintl</object-name>
+<object-name>slidedoorintr</object-name>
+<object-name>slidedoorintl</object-name>
+
+<!-- TRANSPARENT OBJECTS -->
+<object-name>vitresint</object-name>
+<object-name>frontdoorglasleftint</object-name>
+<object-name>frontdoorglasrighint</object-name>
+<object-name>sidedoorglasleftint</object-name>
+<object-name>sidedoorglasrightint</object-name>
+<object-name>slidedoorglasleftint</object-name>
+<object-name>slidedoorglasrighint</object-name>
+</animation>
+
+<!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitresint</object-name>
+<object-name>frontdoorglasleftint</object-name>
+<object-name>frontdoorglasrighint</object-name>
+<object-name>sidedoorglasleftint</object-name>
+<object-name>sidedoorglasrightint</object-name>
+<object-name>slidedoorglasleftint</object-name>
+<object-name>slidedoorglasrighint</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitresint</object-name>
+<object-name>frontdoorglasleftint</object-name>
+<object-name>frontdoorglasrighint</object-name>
+<object-name>sidedoorglasleftint</object-name>
+<object-name>sidedoorglasrightint</object-name>
+<object-name>slidedoorglasleftint</object-name>
+<object-name>slidedoorglasrighint</object-name>
+</animation>
+
+
+<effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+<object-name>vitresint</object-name>
+<object-name>frontdoorglasleftint</object-name>
+<object-name>frontdoorglasrighint</object-name>
+<object-name>sidedoorglasleftint</object-name>
+<object-name>sidedoorglasrightint</object-name>
+<object-name>slidedoorglasleftint</object-name>
+<object-name>slidedoorglasrighint</object-name>
+</effect>
+
+
+
+<!-- Removes reflective glass on internal views -->
+   <animation>
+        <type>select</type>
+      <object-name>vitres</object-name>
+      <object-name>vitresint</object-name>
+      <object-name>frontdoorglasleftint</object-name>
+      <object-name>frontdoorglasrighint</object-name>
+      <object-name>sidedoorglasleftint</object-name>
+      <object-name>sidedoorglasrightint</object-name>
+      <object-name>slidedoorglasleftint</object-name>
+      <object-name>slidedoorglasrighint</object-name>
+
+		<condition>
+            <not>
+            <property>sim/current-view/internal</property>
+            </not>
+        </condition>
+    </animation>
+
+
+
+
+<!--Working For Rembrandt-->
+
+<animation>
+<type>material</type>
+<object-name>interieur</object-name>
+<object-name>floor1</object-name>
+<object-name>floor2</object-name>
+<object-name>frontdoorlint</object-name>
+<object-name>frontdoorrint</object-name>
+<object-name>sidedoorintr</object-name>
+<object-name>sidedoorintl</object-name>
+<object-name>slidedoorintr</object-name>
+<object-name>slidedoorintl</object-name>
+<object-name>ajout</object-name>
+<emission>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+<red>   0.1 </red>
+<green> 0.1 </green>
+<blue>  0.1 </blue>
+</emission>
+</animation>
+
+
+
+
+
+<!-- Left seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -6.66525 </x-m>
+<y-m>  0.51496 </y-m>
+<z-m> -1.28612 </z-m>
+</offsets>
+</model>
+
+<!-- Right seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -6.66525 </x-m>
+<y-m> -0.51496 </y-m>
+<z-m> -1.28612 </z-m>
+</offsets>
+</model>
+
+
+
+<!-- Planche de bord -->
+<model>
+<path>Aircraft/UH-1/Models/Interior212/Panel/panel.xml</path>
+<offsets>
+<x-m> -6.999 </x-m>
+<y-m>  0.000 </y-m>
+<z-m> -0.785 </z-m>
+</offsets>
+</model>
+
+<!--OVERHEADPANEL-->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Overhead/OHpanel.xml</path>
+<offsets>
+<x-m> -6.70 </x-m>
+<y-m>  0.00 </y-m>
+<z-m>  0.11 </z-m>
+<pitch-deg> 84 </pitch-deg>
+</offsets>
+</model>
+
+
+
+<animation>
+<name>IntLeftFrontDoor</name>
+<object-name>frontdoorlint</object-name>
+<object-name>frontdoorglasleftint</object-name>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntLeftFrontDoor</object-name>
+<property>instrumentation/doors/copilot/position-norm</property>
+<factor>-80</factor>
+<axis>
+<x1-m> -7.284 </x1-m>
+<y1-m> -0.853 </y1-m>
+<z1-m> -1.285 </z1-m>
+<x2-m> -7.288 </x2-m>
+<y2-m> -0.887 </y2-m>
+<z2-m> -0.777 </z2-m>
+</axis>
+</animation>
+
+<animation>
+<name>IntRightFrontDoor</name>
+<object-name>frontdoorrint</object-name>
+<object-name>frontdoorglasrighint</object-name>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntRightFrontDoor</object-name>
+<property>instrumentation/doors/pilot/position-norm</property>
+<factor>80</factor>
+<axis>
+<x1-m> -7.284 </x1-m>
+<y1-m>  0.853 </y1-m>
+<z1-m> -1.285 </z1-m>
+<x2-m> -7.288 </x2-m>
+<y2-m>  0.887 </y2-m>
+<z2-m> -0.777 </z2-m>
+</axis>
+</animation>
+
+<animation>
+<name>IntLeftDoor</name>
+<object-name>sidedoorintl</object-name>
+<object-name>sidedoorglasleftint</object-name>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntLeftDoor</object-name>
+<property>instrumentation/doors/leftchief/position-norm</property>
+<factor> -80 </factor>
+<center>
+<x-m> -6.107 </x-m>
+<y-m> -1.120 </y-m>
+<z-m> -0.608 </z-m>
+</center>
+<axis>
+<x> 0 </x>
+<y> 0 </y>
+<z> 1 </z>
+</axis>
+</animation>
+
+<animation>
+<name>IntRightDoor</name>
+<object-name>sidedoorintr</object-name>
+<object-name>sidedoorglasrightint</object-name>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntRightDoor</object-name>
+<property>instrumentation/doors/rightchief/position-norm</property>
+<factor> 80 </factor>
+<center>
+<x-m> -6.107 </x-m>
+<y-m>  1.120 </y-m>
+<z-m> -0.608 </z-m>
+</center>
+<axis>
+<x> 0 </x>
+<y> 0 </y>
+<z> 1 </z>
+</axis>
+</animation>
+
+<animation>
+<name>IntLeftSlide</name>
+<object-name>slidedoorintl</object-name>
+<object-name>slidedoorglasleftint</object-name>
+</animation>
+
+<animation>
+<type>translate</type>
+<object-name>IntLeftSlide</object-name>
+<property>instrumentation/doors/leftslide/position-norm</property>
+<interpolation>
+<entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
+<entry><ind> 0.1 </ind><dep> -0.075 </dep></entry>
+<entry><ind> 1.0 </ind><dep> -0.170 </dep></entry>
+</interpolation>
+<axis>
+<x> 0 </x>
+<y> 1 </y>
+<z> 0 </z>
+</axis>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntLeftSlide</object-name>
+<property>instrumentation/doors/leftslide/position-norm</property>
+<interpolation>
+<entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+<entry><ind> 0.1 </ind><dep>  0 </dep></entry>
+<entry><ind> 1.0 </ind><dep> 15 </dep></entry>
+</interpolation>
+<center>
+<x-m> -5.656 </x-m>
+<y-m>  6.182 </y-m>
+<z-m> -0.789 </z-m>
+</center>
+<axis>
+<x> 0 </x>
+<y> 0 </y>
+<z> 1 </z>
+</axis>
+</animation>
+
+<animation>
+<name>IntRightSlide</name>
+<object-name>slidedoorintr</object-name>
+<object-name>slidedoorglasrighint</object-name>
+</animation>
+
+<animation>
+<type>translate</type>
+<object-name>IntRightSlide</object-name>
+<property>instrumentation/doors/rightslide/position-norm</property>
+<interpolation>
+<entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+<entry><ind> 0.1 </ind><dep> 0.075 </dep></entry>
+<entry><ind> 1.0 </ind><dep> 0.170 </dep></entry>
+</interpolation>
+<axis>
+<x> 0 </x>
+<y> 1 </y>
+<z> 0 </z>
+</axis>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>IntRightSlide</object-name>
+<property>instrumentation/doors/rightslide/position-norm</property>
+<interpolation>
+<entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+<entry><ind> 0.1 </ind><dep>   0 </dep></entry>
+<entry><ind> 1.0 </ind><dep> -15 </dep></entry>
+</interpolation>
+<center>
+<x-m> -5.656 </x-m>
+<y-m> -6.182 </y-m>
+<z-m> -0.789 </z-m>
+</center>
+<axis>
+<x> 0 </x>
+<y> 0 </y>
+<z> 1 </z>
+</axis>
+</animation>
+
+</PropertyList>

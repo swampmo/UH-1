@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>vent1.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>part1</object-name>
+    <object-name>part2</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+ 
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+  
+    <emission>
+        <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+    </emission>
+  </animation>
+
+
+
+
+ 
+  <animation>
+    <type>material</type>
+      <object-name>part1</object-name>
+
+  
+    <emission>
+                          <red>0.4</red>
+			<green>0.4</green>
+			 <blue>0.4</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+      <object-name>part1</object-name>
+
+  
+    <emission>
+                          <red>0.2</red>
+			<green>0.2</green>
+			 <blue>0.2</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+    </emission>
+  </animation>
+
+
+
+
+
+
+</PropertyList>

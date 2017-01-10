@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>panel.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/pkp/pkp.xml</path>
+    <offsets>
+      <x-m> -0.245 </x-m>
+      <y-m>  -0.35 </y-m>
+      <z-m>  0.29 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/pkp/pkp.xml</path>
+    <offsets>
+      <x-m> -0.245 </x-m>
+      <y-m>  0.35 </y-m>
+      <z-m>  0.29 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.25 </x-m>
+      <y-m>  -0.35 </y-m>
+      <z-m>  0.15 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m>  -0.25 </x-m>
+      <y-m>  0.35 </y-m>
+      <z-m>  0.15 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+
+ 
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  -0.265 </x-m>
+      <y-m>  0.245 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  -0.265 </x-m>
+      <y-m>  -0.245 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  -0.24 </x-m>
+      <y-m>  0.46 </y-m>
+      <z-m>  0.20 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  -0.24 </x-m>
+      <y-m>  -0.46 </y-m>
+      <z-m>  0.20 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -0.26 </x-m>
+      <y-m>  -0.46 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -0.26 </x-m>
+      <y-m>  0.46 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RPM/rpm.xml</path>
+    <offsets>
+      <x-m>  -0.235 </x-m>
+      <y-m>  -0.24 </y-m>
+      <z-m>  0.2 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RPM/rpm.xml</path>
+    <offsets>
+      <x-m>  -0.235 </x-m>
+      <y-m>  0.24 </y-m>
+      <z-m>  0.2 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/fuel/fuelqty.xml</path>
+    <offsets>
+      <x-m>  -0.25 </x-m>
+      <y-m>  -0.54 </y-m>
+      <z-m>  0.26 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/fuel/fuelqty.xml</path>
+    <offsets>
+      <x-m>  -0.25 </x-m>
+      <y-m>  0.54 </y-m>
+      <z-m>  0.26 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radaralt/rad-alt.xml</path>
+    <offsets>
+      <x-m>  -0.24 </x-m>
+      <y-m>  0.15 </y-m>
+      <z-m>  0.2 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radaralt/rad-alt.xml</path>
+    <offsets>
+      <x-m>  -0.24 </x-m>
+      <y-m>  -0.15 </y-m>
+      <z-m>  0.2 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radar/radar.xml</path>
+    <offsets>
+      <x-m>  -0.2 </x-m>
+      <y-m>  -0.5</y-m>
+      <z-m>  0.08 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radar/radar.xml</path>
+    <offsets>
+      <x-m>  -0.2 </x-m>
+      <y-m>  0.5</y-m>
+      <z-m>  0.08 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ILS/ils.xml</path>
+    <offsets>
+      <x-m>  -0.26 </x-m>
+      <y-m>  -0.15 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ILS/ils.xml</path>
+    <offsets>
+      <x-m>  -0.26 </x-m>
+      <y-m>  0.15 </y-m>
+      <z-m>  0.28 </z-m>
+      <pitch-deg>    -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+<model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  -0.28 </x-m>
+      <y-m>  -0.19 </y-m>
+      <z-m>  0.36 </z-m>
+      <pitch-deg>  -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  -0.28 </x-m>
+      <y-m>  0.19 </y-m>
+      <z-m>  0.36 </z-m>
+      <pitch-deg>  -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+  
+  <!-- Air Vents -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -0.227 </x-m>
+      <y-m>  0.650 </y-m>
+      <z-m>  0.160 </z-m>
+      <roll-deg>    180 </roll-deg>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -0.206 </x-m>
+      <y-m>  0.650 </y-m>
+      <z-m>  0.080 </z-m>
+      <roll-deg>    180 </roll-deg>
+      <pitch-deg>    15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -0.227 </x-m>
+      <y-m> -0.650 </y-m>
+      <z-m>  0.160 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -0.206 </x-m>
+      <y-m> -0.650 </y-m>
+      <z-m>  0.080 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   -15 </pitch-deg>
+      <heading-deg>   0 </heading-deg>
+    </offsets>
+  </model>
+  
+ 
+<model>
+<name>starter_switch_1</name>
+<path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
+<offsets>
+<x-m> -0.065</x-m>
+<y-m> 0.0</y-m>
+<z-m> -0.05 </z-m>
+<pitch-deg>   -80 </pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<name>starter_switch_1</name>
+<path>Aircraft/Instruments-3d/kx165/kx165-2.xml</path>
+<offsets>
+<x-m> -0.01</x-m>
+<y-m> 0.</y-m>
+<z-m> -0.06 </z-m>
+<pitch-deg>   -80 </pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<name>starter_switch_1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Transponder/BendixKing_KT76A.xml</path>
+<offsets>
+<x-m> -0.18</x-m>
+<y-m> 0.0</y-m>
+<z-m> 0.05 </z-m>
+<pitch-deg>   -15 </pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<name>starter_switch_1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Models/kn62a.xml</path>
+<offsets>
+<x-m> -0.09</x-m>
+<y-m> 0.0</y-m>
+<z-m> -0.02 </z-m>
+<pitch-deg>   -80 </pitch-deg>
+</offsets>
+</model>
+
+
+  
+</PropertyList>
+

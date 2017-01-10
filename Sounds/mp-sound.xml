@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<!--
+	thanks to the SAR simulation (GPL) for the helicopter sounds,
+	and the Urban game (LGPL) for the weapon sounds
+
+	+x = aft
+	+y = left
+	+z = up
+-->
+
+<PropertyList>
+	<fx>
+		<!-- Starting Engines -->
+
+		<starter>
+			<name>starter0_start</name>
+			<mode>once</mode>
+			 <path>Aircraft/UH-1/Sounds/v22_turbine_strt_out.wav</path>
+			<condition>
+				<property>controls/engines/engine/master-bat</property>
+			</condition>
+			<volume>
+				<factor>0.3</factor>
+			</volume>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>10</max-dist>
+		</starter>
+
+		
+		<starter>
+			<name>starter0_loop</name>
+			<mode>looped</mode>
+			 <path>Sounds/turbine_loop.wav</path>
+			<condition>
+				<property>controls/engines/engine[0]/starter</property>
+			</condition>
+			<delay-sec>11.6</delay-sec>
+			<volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.3</factor>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.003125</factor>
+        <offset>-0.0</offset>
+        <max>1.03</max>
+      </pitch>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>10</max-dist>
+		</starter>
+
+	
+
+		<starter>
+			<name>starter1_start</name>
+			<mode>once</mode>
+			 <path>Aircraft/UH-1/Sounds/v22_turbine_strt_out.wav</path>
+			<condition>
+				<property>controls/engines/engine[1]/starter</property>
+			</condition>
+			<volume>
+				<factor>0.3</factor>
+			</volume>
+			<position>
+				<x>-0.88</x>
+				<y>-0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>10</max-dist>
+		</starter>
+
+		<starter>
+			<name>starter1_loop</name>
+			<mode>looped</mode>
+			<path>Sounds/turbine_loop.wav</path>
+			<condition>
+				<property>controls/engines/engine[1]/starter</property>
+			</condition>
+			<delay-sec>11.6</delay-sec>
+			<volume>
+        <property>rotors/gear/torque-sound-filtered</property>
+        <factor>0.3</factor>
+      </volume>
+      <pitch>
+        <property>rotors/main/rpm</property>
+        <factor>0.003125</factor>
+        <offset>-0.0</offset>
+        <max>1.03</max>
+      </pitch>
+			<position>
+				<x>-0.88</x>
+				<y>-0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>10</max-dist>
+		</starter>
+
+		
+		
+		<engine>
+			<name>turbine0-loop</name>
+			<mode>looped</mode>
+			<path>Sounds/turbine_loop.wav</path>
+			<condition>
+				<property>engines/engine[0]/running</property>
+			</condition>
+			<delay-sec>7.5</delay-sec>
+			<volume>
+				<factor>0.03</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>5</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>turbine0-shutdown</name>
+			<mode>once</mode>
+			<path>Sounds/turbine_shutdown.wav</path>
+			<condition>
+				<not>
+					<property>engines/engine[0]/running</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>0.03</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>5</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>turbine1-start</name>
+			<mode>once</mode>
+			<path>Sounds/turbine_start.wav</path>
+			<condition>
+				<property>engines/engine[1]/running</property>
+			</condition>
+			<volume>
+				<factor>0.03</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>5</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>turbine1-loop</name>
+			<mode>looped</mode>
+			<path>Sounds/turbine_loop.wav</path>
+			<condition>
+				<property>engines/engine[1]/running</property>
+			</condition>
+			<delay-sec>7.5</delay-sec>
+			<volume>
+				<factor>0.03</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>5</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>turbine1-shutdown</name>
+			<mode>once</mode>
+			<path>Sounds/turbine_shutdown.wav</path>
+			<condition>
+				<not>
+					<property>engines/engine[1]/running</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>0.03</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>5</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust0-start</name>
+			<mode>once</mode>
+			<path>Sounds/exhaust_start.wav</path>
+			<condition>
+				<property>engines/engine[0]/running</property>
+			</condition>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust0-loop</name>
+			<mode>looped</mode>
+			<path>Sounds/exhaust_loop.wav</path>
+			<condition>
+				<property>engines/engine[0]/running</property>
+			</condition>
+			<delay-sec>11.5</delay-sec>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust0-shutdown</name>
+			<mode>once</mode>
+			<path>Sounds/exhaust_shutdown.wav</path>
+			<condition>
+				<not>
+					<property>engines/engine[0]/running</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust1-start</name>
+			<mode>once</mode>
+			<path>Sounds/exhaust_start.wav</path>
+			<condition>
+				<property>engines/engine[1]/running</property>
+			</condition>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust1-loop</name>
+			<mode>looped</mode>
+			<path>Sounds/exhaust_loop.wav</path>
+			<condition>
+				<property>engines/engine[1]/running</property>
+			</condition>
+			<delay-sec>11.5</delay-sec>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>exhaust1-shutdown</name>
+			<mode>once</mode>
+			<path>Sounds/exhaust_shutdown.wav</path>
+			<condition>
+				<not>
+					<property>engines/engine[1]/running</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>0.02</factor>
+			</volume>
+			<volume>
+				<property>sim/model/wildcat/sound/volume</property>
+				<factor>10</factor>
+			</volume>
+			<reference-dist>50</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<rotor>
+			<name>rotor-outside</name>
+			<mode>looped</mode>
+			  <path>Aircraft/UH-1/Sounds/outside_only_flap.wav</path>
+			<condition>
+				<and>
+					<not>
+						<property>sim/current-view/internal</property>
+					</not>
+					<greater-than>
+						<property>rotors/main/rpm</property>
+						<value>50</value>
+					</greater-than>
+					<not>
+						<property>sim/crashed</property>
+					</not>
+				</and>
+			</condition>
+			<volume>
+				<property>rotors/main/rpm</property>
+				<factor>0.008</factor>
+			</volume>
+			<pitch>
+				<property>rotors/main/rpm</property>
+				<factor>0.002262</factor>
+				<offset>0.33</offset>
+				<min>0</min>
+				<max>1.5</max>
+			</pitch>
+			<reference-dist>5</reference-dist>
+			<max-dist>2000</max-dist>
+		</rotor>
+
+		
+<guns>
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/UH-1/Sounds/gunfire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </guns>
+    
+    <!-- rockets away -->
+    <guns>
+      <name>Rockets1</name>
+      <path>Aircraft/UH-1/Sounds/Missile.wav</path>
+      <condition>
+         <property>controls/armament/trigger1</property>
+         <property>ai/submodels/submodel/count</property>
+      </condition>
+    </guns>
+	
+	<guns>
+      <name>Rockets2</name>
+      <path>Aircraft/UH-1/Sounds/Missile.wav</path>
+      <condition>
+         <property>controls/armament/trigger2</property>
+         <property>ai/submodels/submodel/count</property>
+      </condition>
+    </guns>
+		
+
+		
+	</fx>
+</PropertyList>

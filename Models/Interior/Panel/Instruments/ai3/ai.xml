@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <path>ai.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>AI.ball</object-name>
+        <object-name>AI.rollneedle</object-name>
+        <object-name>AI.ring</object-name>
+        <object-name>AI.bird</object-name>
+        <emission>
+            <red>0.0175</red>
+            <green>0.0175</green>
+            <blue>0.0175</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+        </emission>
+    </animation>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>AI.ball</object-name>
+        <object-name>AI.rollneedle</object-name>
+        <property>/orientation/roll-deg</property>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>-0.042</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>AI.ball</object-name>
+        <property>/orientation/pitch-deg</property>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>-0.042</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+
+</PropertyList>

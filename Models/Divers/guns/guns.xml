@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>guns.ac</path>
+
+ <model>
+ <name>pilot1</name>
+<path>Aircraft/UH-1/Models/Divers/Pilot/Helipilot4/pilot.xml</path>
+<offsets>
+<x-m> -2.60 </x-m>
+<y-m>  0.5 </y-m>
+<z-m> 0.80 </z-m>
+</offsets>
+</model>
+
+<model>
+<name>pilot2</name>
+<path>Aircraft/UH-1/Models/Divers/Pilot/Helipilot4/pilot.xml</path>
+<offsets>
+<x-m> -2.60 </x-m>
+<y-m>  -0.55 </y-m>
+<z-m> 0.80 </z-m>
+</offsets>
+</model>
+
+</PropertyList>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>collective.ac</path>
+	
+  <animation>
+    <object-name>throttle</object-name>
+    <object-name>idlerelease</object-name>
+    <object-name>starter</object-name>
+    <object-name>collts</object-name>
+    <object-name>collgov</object-name>
+  </animation>
+
+  <animation>
+    <name>CollectiveComplet</name>
+    <object-name>throttle</object-name>
+    <object-name>idlerelease</object-name>
+    <object-name>starter</object-name>
+    <object-name>collts</object-name>
+    <object-name>collgov</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CollectiveComplet</object-name>
+    <property>rotors/main/blade[0]/incidence-deg</property>
+    <factor> 2 </factor>
+    <offsets>
+      <x-m>  0.145 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.003 </z-m>
+    </offsets>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

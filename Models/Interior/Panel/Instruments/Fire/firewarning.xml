@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--###################################################################################
+		Lake of Constance Hangar :: M.Kraus
+		Septemper 2013
+		This file is licenced under the terms of the GNU General Public Licence V2 or later
+		###################################################################################
+-->
+
+<PropertyList>
+
+<path>firewarning.ac</path>
+
+	<animation>
+		<type>material</type>
+		<object-name>button.001</object-name>
+		<object-name>button.002</object-name>
+		<object-name>button.003</object-name>
+		<object-name>button.004</object-name>
+		
+		<emission>
+		<factor-prop>controls/lighting/dash-dim</factor-prop>
+				<red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+		</emission>
+	</animation>
+
+<!-- the four lamps in the center are beeing indicator for engines off or fire -->
+<animation>
+  <type>material</type>
+  <object-name>lampone</object-name>
+  <object-name>lamptwo</object-name>
+
+  <emission>
+    <red>0.8</red>
+    <green>0.2</green>
+    <blue>0.0</blue>
+  </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>lampone</object-name>
+  <condition>
+		<greater-than>
+			<property>/b707/ess-bus</property>
+			<value>20</value>
+		</greater-than>
+    <or>
+		  <property>/controls/test/warn-knob</property>
+		  <property>/controls/engines/engine[0]/fire</property>
+		</or>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>lamptwo</object-name>
+  <condition>
+		<greater-than>
+			<property>/b707/ess-bus</property>
+			<value>20</value>
+		</greater-than>
+    <or>
+		  <property>/controls/test/warn-knob</property>
+		  <property>/controls/engines/engine[1]/fire</property>
+		</or>
+  </condition>
+</animation>
+
+
+
+   
+    
+    
+</PropertyList>

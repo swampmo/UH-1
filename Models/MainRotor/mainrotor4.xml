@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>mainrotor4.ac</path>
+
+  <animation>
+    <object-name>starflex</object-name>
+    <object-name>starflex2</object-name>
+    
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade1a.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade2a.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Blade3</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade1a.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Blade4</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade2a.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+      <heading-deg> 270 </heading-deg>
+    </offsets>
+  </model>
+  
+  <animation>
+    <name>rotorcomplet</name>
+    <object-name>starflex</object-name>
+    <object-name>starflex2</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>
+    <object-name>Blade3</object-name>
+    <object-name>Blade4</object-name>
+  </animation>
+
+  <!-- Rotation du rotor -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/main/roll-deg</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.589 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/main/yaw-deg</property>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.589 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>Ensemble</name>
+    <object-name>rotorcomplet</object-name>
+    <object-name>starflex</object-name>  
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Ensemble</object-name>
+    <property>rotors/main/rpm</property>
+    <factor>1.0</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>10button.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>button1</object-name>
+    <object-name>button2</object-name>
+    <object-name>button3</object-name>
+    <object-name>button4</object-name>
+    <object-name>button5</object-name>
+    <object-name>button6</object-name>
+    <object-name>button7</object-name>
+    <object-name>button8</object-name>
+    <object-name>button9</object-name>
+    <object-name>button10</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+

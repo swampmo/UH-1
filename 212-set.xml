@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="uh1-base.xml">
+
+<sim>
+
+<description>Bell 212 "TwinHuey"</description>
+<author>BARANGER Emmanuel (FMD/3D), StuartC (Twin version FDM ), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
+<status>V1.0</status>
+
+<flight-model>yasim</flight-model>
+<aero>212-yasim</aero>
+
+<!--STARTUP-->
+<startup>
+<splash-texture>Aircraft/UH-1/Splash/212-splash.png</splash-texture>
+</startup>
+
+<!--MODEL-->
+<model>
+<path archive="y">Aircraft/UH-1/Models/212-TwinHuey.xml</path>
+</model>
+
+<!--SUBMODELS-->
+<submodels>
+<serviceable type="bool">true</serviceable>
+<path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
+<path>Aircraft/UH-1/Models/payload/loads.xml</path>
+</submodels>
+
+<!--MULTIPLAY-->
+<multiplay n="0">
+<generic n="0">
+<string n="2" type="string">412</string>
+
+<!-- Nav lights on -->
+  <int n="0" alias="/controls/switches/nav-lights-switch" />
+      <!-- Beacon on -->
+  <int n="1" alias="/controls/switches/beacon-switch" />
+      <!-- Landing lights on -->
+  <int n="2" alias="/controls/switches/landing-lights-switch" />
+	    <!-- Taxi light on -->
+  <int n="3" alias="/controls/switches/strobe-switch" />
+   <!-- Crashed -->
+
+<int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+<int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+  <int n="7" alias="/sim/crashed" />
+<int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+<!-- doors -->
+<float n="0" alias="/instrumentation/doors/pilot"/>
+<float n="1" alias="/instrumentation/doors/copilot"/>
+<float n="2" alias="/instrumentation/doors/leftchief"/>                     
+<float n="3" alias="/instrumentation/doors/rightchief"/>                    
+<float n="4" alias="/instrumentation/doors/leftslide"/>
+<float n="5" alias="/instrumentation/doors/rightslide"/>
+<!-- -->
+<float n="10" alias="/sim/model/turret-positions/turretx"/><!-- Searchlight over MP -->
+<float n="11" alias="/sim/model/turret-positions/turretz"/><!-- searchlight over MP -->
+<string alias="/sim/weight[5]/selected" n="1"/> <!-- Payload over multiplayer -->
+</generic>
+</multiplay>
+</sim>
+
+<!--INSTRUMENTATION-->
+<instrumentation>
+<cdu>
+<config>
+<texture>boeing_brown.png</texture>
+</config>
+<display>IDENT</display>
+<ident>
+<model>412</model>
+<engines>-80C2B1F</engines>
+</ident>
+<input type="string"/>
+<serviceable>true</serviceable>
+</cdu>
+</instrumentation>
+<!--RADAR-->
+
+<nasal>
+<VHF22>
+<file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+</VHF22>
+<VIR32>
+<file>Aircraft/Generic/DualControl/Instruments/VIR-32/ctl32.nas</file>
+</VIR32>
+<ADF462>
+<file>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62.nas</file>
+</ADF462>
+<chronograph>
+<file>Aircraft/UH-1/Nasal/chronograph.nas</file>
+</chronograph>
+
+<uh1>
+
+<file>Aircraft/UH-1/Nasal/uh1.nas</file>
+<file>Aircraft/UH-1/Nasal/lightold.nas</file>
+<file>Aircraft/UH-1/Nasal/Lightsold.nas</file>
+<file>Aircraft/UH-1/Nasal/liveries.nas</file>
+</uh1>
+
+<doors>
+<file>Aircraft/UH-1/Nasal/doors.nas</file>
+</doors>
+
+<lights>
+  <file>Aircraft/UH-1/Nasal/Lights.nas</file>
+</lights>
+
+<cdu>
+<file>Aircraft/UH-1/Nasal/boeing.nas</file>
+</cdu>
+
+<radar>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RDR-160/RDR160.nas</path>
+</radar>
+
+
+  <load>
+      <file>Aircraft/UH-1/Nasal/ext_stores.nas</file>
+    </load>
+
+<radar1>
+<file>Aircraft/UH-1/Nasal/tcas.nas</file>
+</radar1>
+
+<guns>
+<file>Aircraft/UH-1/Nasal/guns.nas</file>
+</guns>
+
+<dual_control_tools>
+   <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+  </dual_control_tools>
+  <aircraft_dual_control>
+   <file>Aircraft/UH-1/Nasal/uh1-dual-control.nas</file>
+  </aircraft_dual_control>
+  <dual_control>
+   <file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
+  </dual_control>	
+	<OPRF>
+   <file>Aircraft/UH-1/Nasal/damage.nas</file>
+   <file>Aircraft/UH-1/Nasal/payloads.nas</file>
+	</OPRF>	
+</nasal>
+
+</PropertyList>

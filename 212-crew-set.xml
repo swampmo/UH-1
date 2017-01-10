@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<!--
+  MD500 multiplayer passenger view.
+
+  Copyright (C) 2009  Anders Gidenstam  (anders(at)gidenstam.org)
+  This file is licensed under the GPL license version 2 or later.
+-->
+<!--
+  Usage: fgfs - -prop:/sim/remote/pilot-callsign="remote pilot callsign" - -aircraft=Fi-156-passenger
+-->
+<PropertyList>
+
+<sim include="Systems/viewscrew.xml">
+
+  <description>212 Multiplayer crew</description>
+  <author>Anders Gidenstam</author>
+  <status>alpha</status>
+  <aircraft-version>$Id$</aircraft-version>
+  
+  <flight-model>null</flight-model>
+
+  <presets>
+   <onground type="bool">false</onground>
+   <altitude-agl-ft type="double">30.0</altitude-agl-ft>
+  </presets>
+
+  <!-- 3d model -->
+  <model>
+   <path>Aircraft/UH-1/Models/212-crew.xml</path>
+  </model>
+
+
+ 	<sound>
+      <path>Aircraft/UH-1/Sounds/uh1-sound.xml</path>
+    </sound>
+  
+
+  <menubar>
+   <default>
+    <menu n="100">
+     <label>212</label>
+     <item>
+      <label>Select MP-pilot</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+        dual_control_tools.
+          copilot_dialog.show(aircraft_dual_control.pilot_type);
+       </script>
+      </binding>
+     </item>
+    </menu>
+   </default>
+  </menubar>
+
+ </sim>
+ 
+ <!--INPUT-->
+<input>
+<keyboard include="Systems/uh1-keyboard.xml"/>
+</input>
+
+ <nasal>
+ 
+ 
+  <dual_control_tools>
+   <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+  </dual_control_tools>
+  <aircraft_dual_control>
+   <file>Aircraft/UH-1/Nasal/212-dual-control.nas</file>
+  </aircraft_dual_control>
+  <dual_control>
+   <file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
+  </dual_control>
+	<OPRF>
+   <file>Aircraft/UH-1/Nasal/damage.nas</file>
+   <file>Aircraft/UH-1/Nasal/payloads.nas</file>
+	</OPRF>
+
+ </nasal>
+
+</PropertyList>

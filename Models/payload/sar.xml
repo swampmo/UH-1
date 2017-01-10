@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<model>
+<name>pilot1</name>
+<path>Aircraft/UH-1/Models/Divers/Pilot/sar/pilots.xml</path>
+<offsets>
+<x-m> -7.8 </x-m>
+<y-m>  0.05 </y-m>
+<z-m> -0.8 </z-m>
+</offsets>
+</model>
+
+<model>
+<name>pilot2</name>
+<path>Aircraft/UH-1/Models/Divers/Pilot/sar/pilots.xml</path>
+<offsets>
+<x-m> -7.8 </x-m>
+<y-m> -0.95 </y-m>
+<z-m> -0.80 </z-m>
+</offsets>
+</model>
+
+<!-- Crew seats -->
+
+<!-- Left seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -5.8 </x-m>
+<y-m>  0.51496 </y-m>
+<z-m> -1.2</z-m>
+<heading-deg>180</heading-deg>
+</offsets>
+</model>
+
+<!-- Right seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -5.8 </x-m>
+<y-m> -0.51496 </y-m>
+<z-m> -1.2 </z-m>
+<heading-deg>180</heading-deg>
+</offsets>
+</model>
+
+<!-- Left seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -4.2 </x-m>
+<y-m>  0.71496 </y-m>
+<z-m> -1.2</z-m>
+</offsets>
+</model>
+
+<!-- Right seat -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/seat.xml</path>
+<offsets>
+<x-m> -4.2 </x-m>
+<y-m> -0.71496 </y-m>
+<z-m> -1.2</z-m>
+</offsets>
+</model>
+
+
+<!-- Bed -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/Seats/bed.xml</path>
+<offsets>
+<x-m> -4.9 </x-m>
+<y-m>  0.03387 </y-m>
+<z-m> 0.05 </z-m>
+</offsets>
+</model>
+
+<!-- Search Light -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/SearchLight/searchlight.xml</path>
+<offsets>
+<x-m> -6.89656 </x-m>
+<y-m>  0.29294 </y-m>
+<z-m> -1.434 </z-m>
+</offsets>
+</model>
+
+<!-- winch -->
+<model>
+<path>Aircraft/UH-1/Models/Divers/winch/winch.xml</path>
+<offsets>
+<x-m> -4.89656 </x-m>
+<y-m>  0.2 </y-m>
+<z-m> -1.13 </z-m>
+</offsets>
+</model>
+
+</PropertyList>
