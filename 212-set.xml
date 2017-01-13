@@ -99,6 +99,7 @@
 <file>Aircraft/UH-1/Nasal/lightold.nas</file>
 <file>Aircraft/UH-1/Nasal/Lightsold.nas</file>
 <file>Aircraft/UH-1/Nasal/liveries.nas</file>
+<file>Aircraft/UH-1/Nasal/EngSim.nas</file>
 </uh1>
 
 <doors>

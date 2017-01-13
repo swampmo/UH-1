@@ -10,7 +10,8 @@
 <status>alpha</status>
 
 <license>GPL v2</license>
-<fuel-fraction>1</fuel-fraction>
+<fuel-fraction>0.8</fuel-fraction>
+
 
 <!--MODEL-->
 <model>
@@ -232,7 +233,47 @@
 <battery type="float">1.0</battery>
 </suppliers>
 </electrical>
+<fuel>
+	<intcon type="bool">false</intcon>
+		<xfeed type="bool">false</xfeed>
+		<testbus type="bool">false</testbus>
+	<engine n="0">
+		<trans type="bool">0</trans>
+		<pump type="bool">0</pump>
+		<valve type="bool">0</valve>
+	</engine>
+	<engine n="1">
+		<trans type="bool">0</trans>
+		<pump type="bool">0</pump>
+		<valve type="bool">0</valve>
+	</engine>
+</fuel>
 </systems>
+
+    <consumables>
+        <hydraulic>
+            <tank n="0">
+                <volume-gal_us type="double">5</volume-gal_us>
+                <capacity-gal_us type="double">5</capacity-gal_us>
+            </tank>
+            <tank n="1">
+                <volume-gal_us type="double">5</volume-gal_us>
+                <capacity-gal_us type="double">5</capacity-gal_us>
+            </tank>
+        </hydraulic>
+    </consumables>
+
+        <hydraulic>
+            <system n='0'>
+                <stage n='0'>
+                    <psi type='double'>1</psi>
+                </stage>
+                <stage n='1'>
+                    <psi type='double'>1</psi>
+                </stage>
+            </system>
+
+        </hydraulic>
 
 <!--ORIENTATION-->
 <orientation>

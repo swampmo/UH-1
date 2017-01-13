@@ -101,7 +101,8 @@
       <file>Aircraft/UH-1/Nasal/lightold.nas</file>
       <file>Aircraft/UH-1/Nasal/Lightsold.nas</file>
       <file>Aircraft/UH-1/Nasal/liveries.nas</file>
-    </uh1>
+      <file>Aircraft/UH-1/Nasal/EngSim.nas</file>   
+	</uh1>
     <doors>
       <file>Aircraft/UH-1/Nasal/doors.nas</file>
     </doors>

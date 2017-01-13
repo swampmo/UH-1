@@ -208,9 +208,11 @@ Disc loading: 6.19 lb/ft² (30.22 kg/m²)
         spring="0.1"
         sfric="1"
         dfric="1"/>
-  <tank x="4.5" y="-0.5" z="-1.4" capacity="2211"/>
+
+	<!-- fueal tanks -->
+  <tank x="4.5" y="-0.5" z="-1.4" capacity="2211" jet="true"/>
   <!-- work around bug in native-fdm.cxx:184 -->
-  <tank x="0" y="0" z="0" capacity="220"/>
+  <tank x="0" y="0" z="0" capacity="220" jet="true"/>
 
 <ballast x="+9.2" y="+0.0" z=" -4.9" mass="500"/>
 

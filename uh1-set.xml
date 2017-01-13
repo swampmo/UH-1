@@ -95,7 +95,7 @@
 <file>Aircraft/UH-1/Nasal/chronograph.nas</file>
 </chronograph>
 <uh1>
-
+<file>Aircraft/UH-1/Nasal/EngSim.nas</file>
 <file>Aircraft/UH-1/Nasal/uh1.nas</file>
 <file>Aircraft/UH-1/Nasal/lightold.nas</file>
 <file>Aircraft/UH-1/Nasal/Lightsold.nas</file>

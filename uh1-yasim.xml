@@ -223,9 +223,9 @@ compression="0.01"
 spring="0.1"
 sfric="1"
 dfric="1"/>
-<tank x="4.5" y="-0.5" z="-1.4" capacity="1400"/>
+<tank x="4.5" y="-0.5" z="-1.4" capacity="1400" jet="true"/>
 <!-- work around bug in native-fdm.cxx:184 -->
-<tank x="0" y="0" z="0" capacity="0"/>
+<tank x="0" y="0" z="0" capacity="0" jet="true"/>
 
 <ballast x="+9.2" y="+0.0" z=" -4.9" mass="500"/>
 
