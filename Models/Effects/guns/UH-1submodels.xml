@@ -14,16 +14,16 @@
     <name>gun1-tracer</name>
     <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
     <trigger>controls/armament/gun-fire</trigger>
-    <speed>2750.0</speed>
+    <speed>2681.0</speed>
     <repeat>true</repeat>
-    <delay>0.15</delay>
+    <delay>0.11</delay>
     <count>1000</count>
     <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
     <y-offset>  6.863 </y-offset>  <!-- -2.092 m =>  6.863 ft -->
     <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
     <yaw-offset>0.0</yaw-offset>
     <pitch-offset>-10</pitch-offset>
-    <life>2.0</life>
+    <life>20.0</life>
     <wind>false</wind>
     <weight>0.1</weight>
     <cd>0.193</cd>
@@ -34,15 +34,15 @@
     <name>gun1-bullet</name>
     <model>Models/Geometry/null.ac</model>
     <trigger>controls/armament/gun-fire</trigger>
-    <speed>2750.0</speed>
+    <speed>2681.0</speed>
     <repeat>true</repeat>
-    <delay>0.2</delay>
+    <delay>0.1</delay>
     <count>1000</count>
     <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
     <y-offset>  6.863 </y-offset>  <!-- -2.092 m =>  6.863 ft -->
     <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
     <pitch-offset>-10</pitch-offset>
-    <life>10.0</life>
+    <life>20.0</life>
     <wind>false</wind>
     <weight>0.1069</weight>
     <cd>0.193</cd>
@@ -60,16 +60,16 @@
     <name>gun2-tracer</name>
     <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
     <trigger>controls/armament/gun-fire</trigger>
-    <speed>2750.0</speed>
+    <speed>2681.0</speed>
     <repeat>true</repeat>
-    <delay>0.15</delay>
+    <delay>0.11</delay>
     <count>1000</count>
     <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
     <y-offset> -6.863 </y-offset>  <!--  2.092 m => -6.863 ft -->
     <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
     <yaw-offset>0.0</yaw-offset>
     <pitch-offset>-10</pitch-offset>
-    <life>2.0</life>
+    <life>20.0</life>
     <wind>false</wind>
     <weight>0.1</weight>
     <cd>0.193</cd>
@@ -80,15 +80,15 @@
     <name>gun2-bullet</name>
     <model>Models/Geometry/null.ac</model>
     <trigger>controls/armament/gun-fire</trigger>
-    <speed>2750.0</speed>
+    <speed>2681.0</speed>
     <repeat>true</repeat>
-    <delay>-10</delay>
+    <delay>0.1</delay>
     <count>1000</count>
     <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
     <y-offset> -6.863 </y-offset>  <!--  2.092 m => -6.863 ft -->
     <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
     <pitch-offset>0</pitch-offset>
-    <life>10.0</life>
+    <life>20.0</life>
     <wind>false</wind>
     <weight>0.1069</weight>
     <cd>0.193</cd>
