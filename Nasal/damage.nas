@@ -29,6 +29,7 @@ var cannon_types = {
 var warhead_lbs = {
     "aim-120":              44.00,
     "AIM120":               44.00,
+    "AIM-120":              44.00,
     "RB-99":                44.00,
     "aim-7":                88.00,
     "RB-71":                88.00,
