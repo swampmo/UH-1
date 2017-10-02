@@ -112,18 +112,14 @@
     <cdu>
       <file>Aircraft/UH-1/Nasal/boeing.nas</file>
     </cdu>
-    <radar>
-      <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RDR-160/RDR160.nas</path>
-    </radar>
+
     <uh1>
       <file>Aircraft/UH-1/Nasal/doors.nas</file>
     </uh1>
     <load>
       <file>Aircraft/UH-1/Nasal/ext_stores.nas</file>
     </load>
-    <radar1>
-      <file>Aircraft/UH-1/Nasal/tcas.nas</file>
-    </radar1>
+
     <guns>
       <file>Aircraft/UH-1/Nasal/guns.nas</file>
     </guns>
