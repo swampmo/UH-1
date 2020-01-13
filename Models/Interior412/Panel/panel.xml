@@ -81,6 +81,16 @@
 </offsets>
 </model>
   
+<!-- Garmin196 -->
+    <model>
+    	<path>Aircraft/Instruments-3d/garmin196/garmin196_support1.xml</path>
+      	<offsets>
+<x-m> -0.24 </x-m>
+<y-m>  0.04 </y-m>
+<z-m>  0.52 </z-m>
+<pitch-deg> -15 </pitch-deg>
+       </offsets>
+   </model>
 
 <!--SCREEN-->
 <model>

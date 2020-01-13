@@ -120,6 +120,10 @@
       <file>Aircraft/UH-1/Nasal/ext_stores.nas</file>
     </load>
 
+		<garmin196>
+			<file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
+		</garmin196> 
+
     <guns>
       <file>Aircraft/UH-1/Nasal/guns.nas</file>
     </guns>
