@@ -2,88 +2,55 @@
 
 <PropertyList>
 
-<path>panel.ac</path>
+<path>fgfs-panel.ac</path>
 
 <animation>
   <type>range</type>
   <min-m>0</min-m>
-  <max-m>100</max-m>
+  <max-m>10</max-m>
  </animation>
-
+ 
+ <!-- Objets opaques -->
 <animation>
-<!-- Objets opaques -->
+<type>material</type>
+<object-name>air-hose</object-name>
+<object-name>cargo-release</object-name>
+<object-name>hot-air</object-name>
+<object-name>hot-air-mount</object-name>
+<object-name>pan-lt-1</object-name>
+<object-name>pan-lt-2</object-name>
+<object-name>pan-lt-3</object-name>
+<object-name>pan-lt-4</object-name>
 <object-name>panel</object-name>
-<object-name>panel1</object-name>
-<object-name>panel2</object-name>
-<object-name>panel3</object-name>
-<object-name>panel4</object-name>
-
-<!-- Objets transparents -->
+<object-name>release-mount</object-name>
+<object-name>warn-base</object-name>
+<object-name>warn-lt</object-name>
+		<emission>
+		  <red>1</red>
+		<green>1</green>
+		 <blue>1</blue>
+		  <factor-prop>/controls/lighting/dash-dim</factor-prop>
+		</emission>
 </animation>
-
-<!-- Cyclic -->
-
-<model>
-<path>Aircraft/UH-1/Models/Divers/sticks/cyclic.xml</path>
-<offsets>
-<x-m> -0.02 </x-m>
-<y-m>  0.5 </y-m>
-<z-m>  -0.53 </z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<model>
-<path>Aircraft/UH-1/Models/Divers/sticks/cyclic.xml</path>
-<offsets>
-<x-m> -0.02 </x-m>
-<y-m>  -0.5 </y-m>
-<z-m>  -0.53 </z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<!-- Collective -->
-
-<model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/collective/collective.xml</path>
-<offsets>
-<x-m> 0.259 </x-m>
-<y-m>  0.28 </y-m>
-<z-m>  -0.13 </z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/collective/collective.xml</path>
-<offsets>
-<x-m> 0.259 </x-m>
-<y-m>  -0.78 </y-m>
-<z-m>  -0.13 </z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<!-- tailrpm-->
-<model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/tailrpm/tailrpm.xml</path>
-<offsets>
-<x-m> -0.259 </x-m>
-<y-m>  0.005 </y-m>
-<z-m>  0.291 </z-m>
-<pitch-deg> -15 </pitch-deg>
-</offsets>
-</model>
 
 <!-- ai -->
 <model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ai3/ai.xml</path>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ai/ai.xml</path>
 <offsets>
-<x-m> -0.2390 </x-m>
-<y-m>  0.380 </y-m>
-<z-m>  0.282 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.240 </x-m>
+<y-m>  0.440 </y-m>
+<z-m>  0.275 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+<offsets>
+<x-m> -0.240 </x-m>
+<y-m> -0.450 </y-m>
+<z-m>  0.275 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -91,10 +58,10 @@
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/alt/alt.xml</path>
 <offsets>
-<x-m> -0.254 </x-m>
-<y-m>  0.507 </y-m>
-<z-m>  0.271 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.245 </x-m>
+<y-m>  0.560 </y-m>
+<z-m>  0.280 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -102,9 +69,9 @@
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/alt/alt.xml</path>
 <offsets>
 <x-m> -0.252 </x-m>
-<y-m> -0.318 </y-m>
-<z-m>  0.260 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<y-m> -0.330 </y-m>
+<z-m>  0.285 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -113,9 +80,9 @@
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/asi/asi.xml</path>
 <offsets>
 <x-m> -0.256 </x-m>
-<y-m>  0.248 </y-m>
-<z-m>  0.275 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<y-m>  0.320 </y-m>
+<z-m>  0.270 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -123,20 +90,220 @@
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/asi/asi.xml</path>
 <offsets>
 <x-m> -0.252 </x-m>
-<y-m> -0.552 </y-m>
-<z-m>  0.261 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<y-m> -0.570 </y-m>
+<z-m>  0.265 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
+</model>
+
+<!--battery-->
+<model>
+<name>battery1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
+<offsets>
+<x-m>  0.115 </x-m>
+<y-m>  0.555 </y-m>
+<z-m>  0.350 </z-m>
+<pitch-deg>-14</pitch-deg>
+</offsets>
+<overlay>
+      <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.35</y-offset>
+    <z-offset>1.35</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--caution1 -->
+<model>
+<name>caution1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/plates/caution1.xml</path>
+<offsets>
+<x-m>-0.235 </x-m>
+<y-m> 0.090 </y-m>
+<z-m> 0.220 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>2.3</y-offset>
+    <z-offset>1</z-offset>
+   </animation>
+  </overlay>
 </model>
 
 <!-- chronograph -->
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chronograph/chronograph.xml</path>
 <offsets>
-<x-m> -0.195 </x-m>
-<y-m>  0.555 </y-m>
-<z-m>  0.059 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.190 </x-m>
+<y-m>  0.560 </y-m>
+<z-m>  0.080 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<!-- Collective -->
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/collective/collective.xml</path>
+<offsets>
+<x-m> 0.450 </x-m>
+<y-m> 0.330</y-m>
+<z-m>-0.330 </z-m>
+<pitch-deg>10</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/collective/collective.xml</path>
+<offsets>
+<x-m> 0.450 </x-m>
+<y-m>-0.785 </y-m>
+<z-m>-0.330 </z-m>
+<pitch-deg>10</pitch-deg>
+</offsets>
+</model>
+
+<!--Com vol -->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/comm-vol/comm-vol.xml</path>
+<offsets>
+<x-m>  0.3400</x-m>
+<y-m>  0.0820</y-m>
+<z-m> -0.1130 </z-m>
+<pitch-deg>-84</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.15</y-offset>
+    <z-offset>1.15</z-offset>
+   </animation>
+   </overlay>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/comm-vol/comm-vol.xml</path>
+<offsets>
+<x-m>  0.3400</x-m>
+<y-m> -0.0900</y-m>
+<z-m> -0.1130 </z-m>
+<pitch-deg>-84</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.15</y-offset>
+    <z-offset>1.15</z-offset>
+   </animation>
+   </overlay>
+</model>
+
+<!--PEDALS-->
+<model>
+<path>Aircraft/UH-1/Models/Divers/pedals/controls.xml</path>
+<offsets>
+<x-m>-0.0250 </x-m>
+<y-m> 0.0300 </y-m>
+<z-m> 0.0170 </z-m>
+<pitch-deg>-18</pitch-deg>
+</offsets>
+</model>
+
+<!-- Cyclic -->
+
+<model>
+<path>Aircraft/UH-1/Models/Divers/sticks/cyclic.xml</path>
+<offsets>
+<x-m> -0.045 </x-m>
+<y-m>  0.530 </y-m>
+<z-m> -0.530 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Divers/sticks/cyclic.xml</path>
+<offsets>
+<x-m> -0.025 </x-m>
+<y-m> -0.530 </y-m>
+<z-m> -0.530 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<!--ENGINECONTROL-->
+<model>
+<name>eng1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/n1_1.xml</path>
+<offsets>
+<x-m>-0.215 </x-m>
+<y-m> 0.200 </y-m>
+<z-m> 0.195 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<!--ENGINECONTROL-->
+<model>
+<name>exh1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/exh_1.xml</path>
+<offsets>
+<x-m>-0.200 </x-m>
+<y-m> 0.200 </y-m>
+<z-m> 0.140 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+ <!-- fire det. warning -->
+ <animation>
+    <type>select</type>
+    <object-name>firedetlight</object-name>
+    <condition>
+	<equals>
+<property>controls/engines/engine/faults/serviceable</property>
+<value>false</value>
+    </equals>
+	</condition>	
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>firedetlight</object-name>
+    <condition>
+   	<equals>
+<property>controls/engines/engine/faults/serviceable</property>
+<value>false</value>
+    </equals>
+    </condition>
+    <emission>
+      <red>2</red>
+    <green>0</green>
+     <blue>0</blue>
+    </emission>
+  </animation>
+
+<!--fire warning test switch-->
+<model>
+<name>fw2</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Switch/firetest.xml</path>
+<offsets>
+<x-m> -0.272 </x-m>
+<y-m>  0.265 </y-m>
+<z-m>  0.360 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -144,20 +311,32 @@
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/fuel/fflow1.xml</path>
 <offsets>
-<x-m> -0.259 </x-m>
-<y-m> -0.131 </y-m>
-<z-m>  0.291 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.255 </x-m>
+<y-m> -0.065 </y-m>
+<z-m>  0.290 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/fuel/fuelqty.xml</path>
 <offsets>
-<x-m> -0.259 </x-m>
-<y-m> -0.064 </y-m>
-<z-m>  0.291 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.255 </x-m>
+<y-m> -0.000 </y-m>
+<z-m>  0.290 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<!--fuel test switch-->
+<model>
+<name>fueltest</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Switch/fueltest.xml</path>
+<offsets>
+<x-m> -0.266 </x-m>
+<y-m> -0.055 </y-m>
+<z-m>  0.370 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -165,20 +344,20 @@
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/gyrocomp/gyro-compass.xml</path>
 <offsets>
-<x-m> -0.224 </x-m>
-<y-m>  0.384 </y-m>
+<x-m> -0.220 </x-m>
+<y-m>  0.440 </y-m>
 <z-m>  0.149 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/gyrocomp/gyro-compass.xml</path>
 <offsets>
-<x-m> -0.224 </x-m>
-<y-m> -0.427 </y-m>
-<z-m>  0.149 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.225 </x-m>
+<y-m> -0.460 </y-m>
+<z-m>  0.170 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -187,52 +366,281 @@
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ILS/ils.xml</path>
 <offsets>
 <x-m> -0.197 </x-m>
-<y-m>  0.384 </y-m>
+<y-m>  0.440 </y-m>
 <z-m>  0.049 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
-<!--radaralt-->
+<!--ILS-->
 <model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radaralt/rad-alt.xml</path>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ILS/ils.xml</path>
 <offsets>
-<x-m> -0.227 </x-m>
-<y-m>  0.247 </y-m>
-<z-m>  0.167 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.197</x-m>
+<y-m> -0.455</y-m>
+<z-m>  0.080</z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<!--limits plate -->
+<model>
+<name>limits</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/plates/limits.xml</path>
+<offsets>
+<x-m> -0.200</x-m>
+<y-m> -0.330</y-m>
+<z-m>  0.070</z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+  <overlay>
+   <animation n="100">
+    <type>scale</type>
+     <property>constants/zero</property>
+     <x-offset>1</x-offset>
+     <y-offset>4</y-offset>
+    <z-offset>2.5</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/compas/mag-compass.xml</path>
+<offsets>
+<x-m> -0.215 </x-m>
+<y-m>  0.655 </y-m>
+<z-m>  0.130 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<name>mgbtem</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/mgb_temp.xml</path>
+<offsets>
+<x-m> -0.225 </x-m>
+<y-m> -0.000 </y-m>
+<z-m>  0.230 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.35</y-offset>
+    <z-offset>1.35</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!-- master caution warning -->
+  <animation>
+    <type>select</type>
+    <object-name>mastercautionlight</object-name>
+    <condition>
+         <or>
+      <less-than>
+				<property>consumables/fuel/total-fuel-lbs</property>
+						<value>171</value>
+					</less-than>
+	               <equals>
+				<property>controls/switches/fuel/transfer-pump[1]</property>
+						<value>false</value>
+					</equals>
+					
+		          <equals>
+				<property>controls/hydraulic/system/electric-pump</property>
+						<value>false</value>
+					</equals>			
+		     <equals>
+				<property>controls/anti-ice/engine[1]/inlet-heat</property>
+						<value>false</value>
+					</equals>						
+				<less-than>
+				<property>environment/metar/temperature-degc</property>
+						<value>-1</value>
+					</less-than>
+		    <less-than>
+				<property>rotors/gear/mgb-oil-pressure-bar</property>
+						<value>1.0</value>
+					</less-than>	
+		   <less-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>1.72369</value>
+					</less-than>			
+	             </or>
+              </condition>
+        </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>mastercautionlight</object-name>
+    <emission>
+        <red>1.0</red>
+      <green>1.0</green>
+      <blue> 1.0</blue>
+    </emission>
+  </animation>
+
+
+<!--mgb pressure-->
+<model>
+<name>mgbpressure</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/mgbpsi.xml</path>
+<offsets>
+<x-m> -0.225 </x-m>
+<y-m> -0.060 </y-m>
+<z-m>  0.230 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+  <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.5</y-offset>
+    <z-offset>1.5</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--notes plate -->
+<model>
+<name>notes</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/plates/notes.xml</path>
+<offsets>
+<x-m> -0.255 </x-m>
+<y-m> -0.210 </y-m>
+<z-m>  0.290 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2.6</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--oil temp-->
+<model>
+<name>oiltemp</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/oil_temp.xml</path>
+<offsets>
+<x-m> -0.220 </x-m>
+<y-m> -0.000 </y-m>
+<z-m>  0.160 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.35</y-offset>
+    <z-offset>1.35</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--oil pressure-->
+<model>
+<name>oilpressure</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/eng_control/oilpsi.xml</path>
+<offsets>
+<x-m> -0.220 </x-m>
+<y-m> -0.065 </y-m>
+<z-m>  0.160 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.5</y-offset>
+    <z-offset>1.5</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<model>
+<path>Aircraft/UH-1/Models/Divers/Pedestal/pedestal.xml</path>
+<offsets>
+<x-m>-0.0000</x-m>
+<y-m> 0.0000 </y-m>
+<z-m>-0.0050 </z-m>
+ <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <!--RPM-->
 <model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RPM/rpm.xml</path>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
 <offsets>
-<x-m> -0.250 </x-m>
-<y-m>  0.138 </y-m>
-<z-m>  0.275 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.220 </x-m>
+<y-m>  0.320 </y-m>
+<z-m>  0.165 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
-<!--second AI-->
+<!--tach-->
 <model>
-<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/standby-adi/stdby-adi.xml</path>
+<name>tach</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/tach/tach.xml</path>
 <offsets>
-<x-m> -0.238 </x-m>
-<y-m> -0.434 </y-m>
-<z-m>  0.264 </z-m>
+<x-m>-0.220 </x-m>
+<y-m> 0.200 </y-m>
+<z-m> 0.275 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
+</model>
+
+<!-- tailrpm-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/tailrpm/tailrpm.xml</path>
+<offsets>
+<x-m> -0.255 </x-m>
+<y-m>  0.080 </y-m>
+<z-m>  0.290 </z-m>
+<pitch-deg>-14.5</pitch-deg>
+</offsets>
+</model>
+
+<!-- torque -->
+<model>
+<name>torque1</name>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/torque2/torque.xml</path>
+<offsets>
+<x-m>-0.200 </x-m>
+<y-m> 0.200</y-m>
+<z-m> 0.080 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.65</y-offset>
+    <z-offset>0.65</z-offset>
+   </animation>
+  </overlay>
 </model>
 
 <!--Turn Coordinator-->
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
 <offsets>
-<x-m> -0.195 </x-m>
-<y-m>  0.258 </y-m>
-<z-m>  0.054 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.190 </x-m>
+<y-m>  0.315 </y-m>
+<z-m>  0.050 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
@@ -241,20 +649,634 @@
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
 <offsets>
 <x-m> -0.221 </x-m>
-<y-m>  0.511 </y-m>
-<z-m>  0.151 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<y-m>  0.560 </y-m>
+<z-m>  0.180 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
 <offsets>
-<x-m> -0.221 </x-m>
-<y-m> -0.315 </y-m>
-<z-m>  0.151 </z-m>
-<pitch-deg> -15 </pitch-deg>
+<x-m> -0.230 </x-m>
+<y-m> -0.330 </y-m>
+<z-m>  0.180 </z-m>
+<pitch-deg>-15</pitch-deg>
 </offsets>
 </model>
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/voltmeter/voltmeterL.xml</path>
+<offsets>
+<x-m> -0.200 </x-m>
+<y-m> -0.065 </y-m>
+<z-m>  0.080 </z-m>
+<pitch-deg>-15</pitch-deg>
+</offsets>
+</model>
+
+<!-- Centre console -->
+
+<!--ADF-->
+<model>
+
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/ADF-462/ctl62-adf1.xml</path>  <!-- DONE -->
+<offsets>
+<x-m> 0.1600 </x-m>
+<y-m>-0.0500 </y-m>
+<z-m>-0.0850 </z-m>
+<pitch-deg>-79</pitch-deg>
+</offsets>
+</model>
+
+<!--TRANSPONDER-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/TDR-94/ctl92-transponder.xml</path>
+<offsets>
+<x-m>  0.1600 </x-m>
+<y-m> -0.1280 </y-m>
+<z-m> -0.0850 </z-m>
+<pitch-deg>-79</pitch-deg>
+</offsets>
+</model>
+<!--NAV2-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/VIR-32/ctl32-nav1.xml</path>  <!-- DONE -->
+<offsets>
+<x-m>  0.0850</x-m>
+<y-m> -0.1280 </y-m>
+<z-m> -0.0700 </z-m>
+<pitch-deg>-77</pitch-deg>
+</offsets>
+</model>
+
+<!--NAV1-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/VIR-32/ctl32-nav2.xml</path>  <!-- DONE -->
+<offsets>
+<x-m>  0.0850</x-m>
+<y-m> -0.0500 </y-m>
+<z-m> -0.0700 </z-m>
+<pitch-deg>-77</pitch-deg>
+</offsets>
+</model>
+<!--COMM2-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/VHF-22/ctl22-com2.xml</path>  <!-- DONE -->
+<offsets>
+<x-m>  0.0150</x-m>
+<y-m> -0.0500 </y-m>
+<z-m> -0.0550 </z-m>
+<pitch-deg>-75</pitch-deg>
+</offsets>
+</model>
+<!--COMM1-->
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/VHF-22/ctl22-com1.xml</path>  <!-- DONE -->
+<offsets>
+<x-m>  0.0150</x-m>
+<y-m> -0.1280 </y-m>
+<z-m> -0.0550 </z-m>
+<pitch-deg>-75</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/UH-1/Models/Interior/Panel/panels/engine_panel/engine_panel.xml</path>  <!-- DONE -->
+<offsets>
+<x-m> 0.1900</x-m>
+<y-m> 0.0850 </y-m>
+<z-m>-0.0880</z-m>
+ <pitch-deg>11</pitch-deg>
+</offsets>
+<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1.5</x-offset>
+    <y-offset>1.13</y-offset>
+    <z-offset>1</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--hyd con -->
+ <model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/hyd.xml</path>
+<offsets>
+<x-m>-0.1230</x-m>
+<y-m> 0.0900 </y-m>
+<z-m>-0.0200</z-m>
+ <pitch-deg>-78</pitch-deg>
+ <heading-deg>0</heading-deg>
+</offsets>
+ <overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>1.7</y-offset>
+    <z-offset>1.7</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!-- non active switches -->
+
+<!--chip detect -->
+ <model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chip_det_panel/chip_det_panel.xml</path>
+<offsets>
+<x-m> -0.1230</x-m>
+<y-m>  0.0000 </y-m>
+<z-m> -0.0220</z-m>
+ <pitch-deg>13</pitch-deg>
+ <heading-deg>0</heading-deg>
+</offsets>
+ <overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>1.7</y-offset>
+    <z-offset>1.7</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+
+
+<!--force trim -->
+ <model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+<offsets>
+<x-m>-0.1230</x-m>
+<y-m> 0.0200 </y-m>
+<z-m>-0.0200</z-m>
+ <pitch-deg>-78</pitch-deg>
+ <heading-deg>0</heading-deg>
+</offsets>
+</model>
+
+
+
+
+<!--caution test -->
+ <model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/wltest.xml</path>
+<offsets>
+<x-m>-0.0435</x-m>
+<y-m> 0.0240 </y-m>
+<z-m>-0.0400</z-m>
+ <pitch-deg>-78</pitch-deg>
+ <heading-deg>0</heading-deg>
+</offsets>
+ <overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>1.7</y-offset>
+    <z-offset>1.7</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!--caution dim -->
+ <model>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+<offsets>
+<x-m> 0.0310</x-m>
+<y-m> 0.0270 </y-m>
+<z-m>-0.0550</z-m>
+ <pitch-deg>-78</pitch-deg>
+ <heading-deg>0</heading-deg>
+</offsets>
+ <overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>1.7</y-offset>
+    <z-offset>1.7</z-offset>
+   </animation>
+  </overlay>
+</model>
+
+<!-- Warning panel text -->
+  <animation>
+  <type>material</type>
+  <object-name>engineoil</object-name>
+   <object-name>pressure1</object-name>
+    <object-name>aux</object-name>
+	<object-name>power</object-name>
+	<object-name>engineice</object-name>
+	<object-name>xmsn</object-name>
+    <object-name>pressure2</object-name>
+	 <object-name>enginefuel</object-name>
+	  <object-name>20min</object-name>
+	  <object-name>leftfuel</object-name>
+	  <object-name>rightfuel</object-name>
+	   <object-name>boost</object-name>
+	    <object-name>boost2</object-name>
+       <object-name>hyd</object-name>
+	    <object-name>pressure3</object-name>
+  <ambient>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+
+
+ <text>
+  <name>engineoil</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0600</x-m>
+    <y-m> 0.0500 </y-m>
+    <z-m>-0.0360</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENGINE OIL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <text>
+  <name>pressure1</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0520</x-m>
+    <y-m> 0.0550 </y-m>
+    <z-m>-0.0360</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">PRESSURE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>     
+    <object-name>engineoil</object-name>
+	<object-name>pressure1</object-name>
+        <condition>
+			<less-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>1.72369</value>
+					</less-than>					
+			</condition>
+    </animation>
+
+ <text>
+  <name>aux</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0600</x-m>
+    <y-m> 0.1150 </y-m>
+    <z-m>-0.0360</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">AUX</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>power</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0530</x-m>
+    <y-m> 0.1130 </y-m>
+    <z-m>-0.0365</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">POWER</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>     
+    <object-name>aux</object-name>
+	<object-name>power</object-name>
+        <condition>
+			<equals>
+				<property>controls/electric/APU-generator</property>
+						<value>true</value>
+					</equals>					
+			</condition>
+    </animation>
+ 
+ <text>
+  <name>engineice</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0430</x-m>
+    <y-m> 0.0475 </y-m>
+    <z-m>-0.0390</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENGINE ICING</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+  <animation>
+        <type>select</type>      
+    <object-name>engineice</object-name>	
+        <condition>
+		   <and>
+			<equals>
+				<property>engines/engine[0]/n1</property>
+						<value>0</value>
+					</equals>					
+				<equals>
+				 <property>controls/anti-ice/engine[1]/inlet-heat</property>
+						<value>false</value>
+					</equals>						
+				 <less-than>
+				<property>environment/metar/temperature-degc</property>
+						<value>-1</value>
+					</less-than>					
+			    </and>		
+			</condition>
+    </animation>
+ 
+  <text>
+  <name>xmsn</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0460</x-m>
+    <y-m> 0.1100 </y-m>
+    <z-m>-0.0380</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">XMSN OIL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>pressure2</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0340</x-m>
+    <y-m> 0.1210 </y-m>
+    <z-m>-0.0285</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">PRESS</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+        <type>select</type>      
+    <object-name>xmsn</object-name>
+	<object-name>pressure2</object-name>
+        <condition>
+			<less-than>
+				<property>rotors/gear/mgb-oil-pressure-bar</property>
+						<value>1.0</value>
+					</less-than>					
+			</condition>
+    </animation>
+	
+ <text>
+  <name>hyd</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0235</x-m>
+    <y-m> 0.1180 </y-m>
+    <z-m>-0.0430</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">HYD</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <text>
+  <name>pressure3</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m>-0.0170</x-m>
+    <y-m> 0.1120 </y-m>
+    <z-m>-0.0430</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">PRESSURE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <animation>
+        <type>select</type>
+          <object-name>hyd</object-name>
+	<object-name>pressure3</object-name>
+        <condition>
+			<equals>
+				<property>controls/hydraulic/system/electric-pump</property>
+						<value>false</value>
+					</equals>					
+			</condition>
+    </animation>
+	
+<text>
+  <name>leftfuel</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+   <x-m> -0.0130</x-m>
+    <y-m> 0.0530 </y-m>
+    <z-m>-0.0460</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LEFT FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+
+ <text>
+  <name>boost</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+   <x-m> -0.0060</x-m>
+    <y-m> 0.0590 </y-m>
+    <z-m>-0.0470</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">BOOST</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+        <type>select</type>       
+	<object-name>leftfuel</object-name>
+		<object-name>boost</object-name>
+        <condition>
+			<equals>
+				<property>controls/switches/fuel/left-boost-pump[1]</property>
+						<value>false</value>
+					</equals>					
+			</condition>
+    </animation>
+ 
+ 
+ 
+ <text>
+  <name>rightfuel</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+   <x-m> -0.0010</x-m>
+    <y-m> 0.0510 </y-m>
+    <z-m>-0.0490</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">RIGHT FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>boost2</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+   <x-m>  0.0050</x-m>
+    <y-m> 0.0580 </y-m>
+    <z-m>-0.0500</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">BOOST</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>       
+	<object-name>rightfuel</object-name>
+		<object-name>boost2</object-name>
+        <condition>
+			<equals>
+				<property>controls/switches/fuel/right-boost-pump[1]</property>
+						<value>false</value>
+					</equals>					
+			</condition>
+    </animation>
+
+ <text>
+  <name>enginefuel</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m> 0.0150</x-m>
+    <y-m> 0.0465 </y-m>
+    <z-m>-0.053s0</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENG FUEL PUMP</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+ <animation>
+        <type>select</type>
+      
+    <object-name>enginefuel</object-name>
+	
+        <condition>
+			<equals>
+				<property>controls/switches/fuel/transfer-pump[1]</property>
+						<value>false</value>
+					</equals>
+					
+			</condition>
+    </animation>
+
+<text>
+  <name>20min</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0045</character-size>
+  <offsets>
+    <x-m> 0.0270</x-m>
+    <y-m> 0.0450 </y-m>
+    <z-m>-0.0555</z-m>
+    <pitch-deg>-78</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">20 MINUTE FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>
+      
+    <object-name>20min</object-name>
+	
+        <condition>
+			<less-than>
+				<property>consumables/fuel/total-fuel-lbs</property>
+						<value>171</value>
+					</less-than>
+					
+			</condition>
+    </animation>
 
 </PropertyList>

@@ -24,12 +24,12 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 <type>material</type>
 <object-name>sup</object-name>
 
-<emission>
-<red>1.0</red>
-<green>1.0</green>
-<blue>1.0</blue>
-<factor-prop>/controls/lighting/landing-lights</factor-prop>
-</emission>
+    <emission>
+ <red>1.0</red>
+ <green>1.0</green>
+ <blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
+    </emission>
 </animation>
 
 <animation>
@@ -37,12 +37,12 @@ This file is licenced under the terms of the GNU General Public Licence V2 or la
 <object-name>KnobRange</object-name>
 <object-name>KnobOnOff</object-name>
 
-<emission>
-<red>1.0</red>
-<green>1.0</green>
-<blue>1.0</blue>
-
-</emission>
+    <emission>
+ <red>1.0</red>
+ <green>1.0</green>
+ <blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
+    </emission>
 </animation>
 
 <animation>

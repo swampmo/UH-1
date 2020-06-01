@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>amp-meter.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>cache</object-name>
+    <object-name>face</object-name>
+    <object-name>visses</object-name>
+    <object-name>needle</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+      <factor-prop>controls/lighting/dash-dim</factor-prop>
+    </emission>
+  </animation>
+  <animation>
+	<type>rotate</type>
+	<object-name>needle</object-name>
+	<property>systems/electrical/amps</property>
+
+	<interpolation>
+		<entry><ind>-48</ind><dep>  0</dep></entry>
+		<entry><ind>  0</ind><dep>  0</dep></entry>
+		<entry><ind> 24</ind><dep>-45</dep></entry>
+		<entry><ind> 48</ind><dep>-90</dep></entry>
+	</interpolation>
+		<!--interpolation>
+		<entry><ind>17</ind><dep>-45</dep></entry>
+		<entry><ind>0</ind><dep>0</dep></entry>
+		<entry><ind>-17</ind><dep>45</dep></entry>
+	</interpolation-->
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+	<center>
+		<x-m> 0.00450</x-m>
+		<y-m> 0.00000  </y-m>
+		<z-m> -0.01499  </z-m>
+	</center>
+</animation>
+
+</PropertyList>

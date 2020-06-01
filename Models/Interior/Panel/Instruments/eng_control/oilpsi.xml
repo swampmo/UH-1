@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>oilpsi.ac</path>
+
+ <animation>
+  <type>scale</type>
+  <x-offset>0.59</x-offset>
+  <y-offset>0.59</y-offset>
+  <z-offset>0.59</z-offset>
+ </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>OILpsi.face</object-name>
+        <object-name>OILpsi.needle</object-name>
+ <property>/engines/engine/oil-pressure-psi</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>10</ind><dep>0</dep></entry>
+   <entry><ind>40</ind><dep>-56</dep></entry>
+   <entry><ind>80</ind><dep>-113</dep></entry>
+   <entry><ind>200</ind><dep>-280</dep></entry>
+  </interpolation>
+    <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+            <factor-prop>controls/lighting/dash-dim</factor-prop>
+        </emission>
+    </animation>
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+
+</PropertyList>

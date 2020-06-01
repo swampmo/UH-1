@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>fueltest.ac</path>
+
+  <animation>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+   
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+    
+    <emission>
+       <red>0.001</red>
+        <green>0.031</green>
+        <blue>0.001</blue>
+      <factor-prop>controls/lighting/dash-dim</factor-prop>
+    </emission>
+  </animation>
+
+ 
+
+</PropertyList>
+
+

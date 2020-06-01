@@ -1,0 +1,17 @@
+<PropertyList>
+
+
+    <!--
+        Property of Gerard Robin (C) 2008-2010
+    Copyright 
+    -->
+
+	<path>rescue-man1.ac</path>
+	<offsets>
+            <pitch-deg>-2.0</pitch-deg>
+            <z-m>0</z-m>
+            <x-m>0</x-m>
+	    <y-m>0</y-m>
+        </offsets>
+
+</PropertyList>

@@ -1,0 +1,32 @@
+<PropertyList>
+
+
+    <!--
+        Property of Gerard Robin (C) 2008-2010
+    Copyright 
+    -->
+
+	<path>rescue-man.ac</path>
+	<offsets>
+            <pitch-deg>-2.0</pitch-deg>
+            <z-m>0</z-m>
+            <x-m>0</x-m>
+	    <y-m>0</y-m>
+        </offsets>
+
+	
+
+<!-- <animation>
+    <type>select</type>
+ <object-name>Rescue-Op</object-name>
+	 <object-name>Rescue-man</object-name>
+    <condition>
+      <equals>
+     <property>instrumentation/doors/cargo/position-norm</property>
+	  <value>1</value>
+	 </equals>
+    </condition>
+  </animation>-->
+
+
+</PropertyList>

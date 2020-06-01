@@ -29,9 +29,10 @@
     <type>material</type>
     <object-name>cover</object-name>
     <emission>
-                          <red>1.0</red>
-			<green>1.0</green>
-			<blue>1.0</blue>
+ <red>1.0</red>
+ <green>1.0</green>
+ <blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
     </emission>
   </animation>
 
@@ -59,9 +60,10 @@
     <object-name>blanker_g</object-name>
     <object-name>blanker_ks</object-name>
     <emission>
-         <red>1.0</red>
-			<green>1.0</green>
-			<blue>1.0</blue>
+ <red>1.0</red>
+ <green>1.0</green>
+ <blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
     </emission>
   </animation>
   <!--Yellow color-->

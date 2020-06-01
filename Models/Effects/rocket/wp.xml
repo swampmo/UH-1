@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>wp.ac</path>
+  <path>Aircraft/UH-1/Models/Effects/rocket/wp.ac</path>
 
   <animation>
     <type>dist-scale</type>

@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>cabin_heating_panel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>panel</object-name>
+    <object-name>potiaft</object-name>
+    <object-name>potibleed</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/console</factor-prop>
+      <green> 0.0 </green>
+      <blue>  0.0</blue>
+    </emission>
+  </animation>
+
+<!--
+  <animation>
+    <type>knob</type>
+    <object-name>potiaft</object-name>
+    <property>controls/heating/aft</property>
+    <center>
+      <x-m>-0.004</x-m>
+      <y-m> 0.028</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/heating/aft</property>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+    </action>
+  </animation>
+-->
+<!--
+  <animation>
+    <type>knob</type>
+    <object-name>potibleed</object-name>
+    <property>controls/heating/bleed</property>
+    <center>
+      <x-m>-0.004</x-m>
+      <y-m>-0.028</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/heating/bleed</property>
+        <min>0</min>
+        <max>4</max>
+      </binding>
+    </action>
+  </animation>
+-->
+
+</PropertyList>

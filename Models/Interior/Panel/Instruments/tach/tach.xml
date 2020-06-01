@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>tach.ac</path>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>TurbineNeedle1</object-name>
+		<property>engines/engine[0]/n2-pct</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>35</dep></entry>
+			<entry><ind>50</ind><dep>151</dep></entry>
+			<entry><ind>100</ind><dep>267</dep></entry>
+			<entry><ind>140</ind><dep>360</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+		</axis>
+	</animation>
+
+	<!--<animation>
+		<type>rotate</type>
+		<object-name>TurbineNeedle2</object-name>
+		<property>engines/engine[1]/n2-pct</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>35</dep></entry>
+			<entry><ind>50</ind><dep>151</dep></entry>
+			<entry><ind>100</ind><dep>267</dep></entry>
+			<entry><ind>140</ind><dep>360</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+		</axis>
+	</animation>-->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>RotorNeedle</object-name>
+		<property>rotors/main/rpm</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>35</dep></entry>
+			<entry><ind>221</ind><dep>151</dep></entry>
+			<entry><ind>442</ind><dep>400</dep></entry>
+			<entry><ind>619</ind><dep>360</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+		</axis>
+	</animation>
+	
+	 <animation>
+    <type>material</type>
+    <object-name>RotorNeedle</object-name>
+	<object-name>TurbineNeedle1</object-name>
+		<object-name>TurbineNeedle2</object-name>
+		<object-name>Face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>controls/lighting/dash-dim</factor-prop>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+    </emission>
+  </animation>
+	
+	
+ <model>
+		
+		<path>Aircraft/Bell_UH-1H/Models/InteriorUH1/Panel/Instruments/surround/surround.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0.002</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+		<overlay>
+		 <animation n="900">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>1.08</y-offset>
+    <z-offset>1.08</z-offset>
+   </animation>
+  </overlay>
+		</model>	
+	
+</PropertyList>
+

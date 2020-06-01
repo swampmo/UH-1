@@ -3,40 +3,116 @@
 <PropertyList>
 
   <path>collective.ac</path>
-	
-  <animation>
-    <object-name>throttle</object-name>
-    <object-name>idlerelease</object-name>
-    <object-name>starter</object-name>
-    <object-name>collts</object-name>
-    <object-name>collgov</object-name>
+ <animation>
+  <name>CollectiveComplete</name>
+    <object-name>Boot</object-name>
+    <object-name>Centre-Label</object-name>
+    <object-name>Coll-Face</object-name>
+    <object-name>Coll-Head</object-name>
+    <object-name>End-Covers</object-name>
+    <object-name>Eng1Label</object-name>
+    <object-name>Eng2Label</object-name>
+    <object-name>Friction-Eng2</object-name>
+    <object-name>Friction-Eng2.1</object-name>
+    <object-name>Friction1</object-name>
+    <object-name>HOIST</object-name>
+	<object-name>IDLE-STOP</object-name>
+	<object-name>LDG-LT</object-name>
+	<object-name>LDG-LT-EXT</object-name>
+	<object-name>Nuts</object-name>
+	<object-name>Paddding</object-name>
+	<object-name>Plug</object-name>
+	<object-name>RPM</object-name>
+	<object-name>SCREWS</object-name>
+	<object-name>Start</object-name>
+	<object-name>Strut</object-name>
+    <object-name>Throttle-Label.1</object-name>
+    <object-name>Throttle-Label.2</object-name>
+	<object-name>Twist-Eng1</object-name>
+	<object-name>Twist-Eng2</object-name>
+    <object-name>Yaw-Switch</object-name>
   </animation>
 
-  <animation>
-    <name>CollectiveComplet</name>
-    <object-name>throttle</object-name>
-    <object-name>idlerelease</object-name>
-    <object-name>starter</object-name>
-    <object-name>collts</object-name>
-    <object-name>collgov</object-name>
-  </animation>
-
-  <animation>
+ <animation>
     <type>rotate</type>
-    <object-name>CollectiveComplet</object-name>
-    <property>rotors/main/blade[0]/incidence-deg</property>
-    <factor> 2 </factor>
-    <offsets>
-      <x-m>  0.145 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.003 </z-m>
-    </offsets>
+    <object-name>CollectiveComplete</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <factor> -20 </factor>
+    <center>
+      <x-m>0.02698 </x-m>
+      <y-m>0.00082 </y-m>
+      <z-m>0.05483</z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
       <z> 0 </z>
     </axis>
   </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Start</object-name>
+    <property>controls/engines/engine/magnetos</property>
+    <factor>-60</factor>
+    <offset-m>0</offset-m>
+    <center>
+      <x-m>-0.29930 </x-m>
+      <y-m> 0.01913 </y-m>
+      <z-m> 0.18279</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+   <animation>
+	 <type>pick</type>
+	     <visible>true</visible>
+	 <object-name>Start</object-name>
+	 <action>
+		 <button>0</button>
+		 <binding>
+			 <command>property-toggle</command>
+			 <property>controls/engines/engine/magnetos</property>
+		 </binding>
+
+	 </action>
+</animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>LDG-LT</object-name>
+    <property>controls/switches/landing-lights-switch</property>
+    <factor>-60</factor>
+    <offset-m>0</offset-m>
+    <center>
+      <x-m>-0.34139 </x-m>
+      <y-m>-0.04338 </y-m>
+      <z-m> 0.19787</z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+   <animation>
+	 <type>pick</type>
+	     <visible>true</visible>
+	 <object-name>LDG-LT</object-name>
+	 <action>
+		 <button>0</button>
+		 <binding>
+			 <command>property-toggle</command>
+			 <property>controls/switches/landing-lights-switch</property>
+		 </binding>
+
+	 </action>
+</animation>
 
 </PropertyList>
 

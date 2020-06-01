@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+ 
+
+<!-- fire det. warning -->
+  <animation>
+    <type>select</type>
+    <object-name>firedetlight</object-name>
+    <condition>
+      <property>/systems/electrical/outputs/fire_det</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>firedetlight</object-name>
+    <condition>
+      <property>/systems/electrical/outputs/fire_det</property>
+    </condition>
+    <emission>
+      <red>  1.0</red>
+      <green>1.0</green>
+      <blue> 1.0</blue>
+    </emission>
+  </animation>
+
+ 
+
+<!-- master caution warning -->
+  <animation>
+    <type>select</type>
+    <object-name>mastercautionlight</object-name>
+    <condition>
+      <property>systems/electrical/outputs/master_caution</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>mastercautionlight</object-name>
+    <emission>
+      <red>  1.0</red>
+      <green>1.0</green>
+      <blue> 1.0</blue>
+    </emission>
+  </animation>
+
+  
+
+<!-- rotor rpm warning -->
+  <animation>
+    <type>select</type>
+    <object-name>rpmwarnlight</object-name>
+    <condition>
+      <property>systems/electrical/outputs/rpm_warn_system</property>
+      <property>controls/switches/engine/mainfuel</property>
+      <or>
+        <less-than>
+          <property>rotors/main/rpm</property>
+          <value>300</value>
+        </less-than>
+        <greater-than>
+          <property>rotors/main/rpm</property>
+          <value>340</value>
+        </greater-than>
+      </or>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>rpmwarnlight</object-name>
+    <emission>
+      <red>  1.0</red>
+      <green>1.0</green>
+      <blue> 1.0</blue>
+    </emission>
+  </animation>
+
+
+
+</PropertyList>

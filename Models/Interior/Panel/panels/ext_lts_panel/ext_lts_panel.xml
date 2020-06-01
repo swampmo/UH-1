@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>ext_lts_panel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>anticoll_switch</object-name>
+    <object-name>extlts_switch</object-name>
+    <object-name>dimextlts_switch</object-name>
+    <object-name>panel</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/console</factor-prop>
+      <red>  0.4</red>
+      <green>0.0</green>
+      <blue> 0.0</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>anticoll_switch</object-name>
+    <property>controls/switches/beacon-switch</property>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x> 0</x>
+      <y>-1</y>
+      <z> 0</z>
+    </axis>
+    <factor>-30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/beacon-switch</property>
+      </binding>
+      
+	  <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/strobe-switch</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<!--
+  <animation>
+    <type>knob</type>
+    <object-name>dimextlts_switch</object-name>
+    <property>controls/switches/extltsdim</property>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x> 0</x>
+      <y>-1</y>
+      <z> 0</z>
+    </axis>
+    <factor>30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/extltsdim</property>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop( "controls/lighting/extltsdim",
+                   getprop( "controls/switches/extltsdim" ) ? 0.3 : 1.0 );
+        </script>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+-->
+
+  <animation>
+    <type>knob</type>
+    <object-name>extlts_switch</object-name>
+    <property>controls/switches/nav-lights-switch</property>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x> 0</x>
+      <y>-1</y>
+      <z> 0</z>
+    </axis>
+    <factor>25</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/nav-lights-switch</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+	   <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/white-light-switch</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>ac_power_panel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>invtrswitch</object-name>
+    <object-name>panel</object-name>
+    <object-name>phasepoti</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/console</factor-prop>
+      <red>  0.04</red>
+      <green>0.0</green>
+      <blue> 0.0</blue>
+    </emission>
+  </animation>
+
+<!--
+  <animation>
+    <type>knob</type>
+    <object-name>phasepoti</object-name>
+    <property>controls/switches/ac_power</property>
+    <center>
+      <x-m> 0.000</x-m>
+      <y-m>-0.036</y-m>
+      <z-m> 0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/ac_power</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+-->
+
+  <animation>
+    <type>knob</type>
+    <object-name>invtrswitch</object-name>
+    <property>controls/switches/invtr</property>
+    <center>
+      <x-m>0.000</x-m>
+      <y-m>0.047</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>30</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/invtr</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<!--
+  <animation>
+    <type>pick</type>
+    <object-name>invtrswitch</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/switches/invtr</property>
+        <step>-1</step>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>invtrswitch</object-name>
+    <property>controls/switches/invtr</property>
+    <factor>60</factor>
+    <center>
+      <x-m>0.000</x-m>
+      <y-m>0.047</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+-->
+</PropertyList>

@@ -6,67 +6,52 @@
 
 <animation>
 		<type>rotate</type>
-		<object-name>mesh2</object-name>
-		<object-name>mesh22</object-name>
-		<object-name>mesh26</object-name>
-		<object-name>mesh24</object-name>
-		<object-name>mesh21</object-name>
-		<object-name>mesh27</object-name>
-		<object-name>mesh3</object-name>
-		<object-name>mesh4</object-name>
-		<object-name>mesh6.001</object-name>
-		<object-name>mesh16.001</object-name>
-		<object-name>mesh16</object-name>
-		<object-name>mesh15</object-name>
-		<object-name>mesh14</object-name>
-		<object-name>mesh18</object-name>
-		<object-name>mesh27.001</object-name>
-		<object-name>mesh12</object-name>
-		<object-name>mesh11</object-name>
-		<object-name>mesh9</object-name>
-		<object-name>mesh20</object-name>
-		
+		<object-name>Cargo-Release</object-name>
+		<object-name>Cyclic Pilot</object-name>
+		<object-name>Cyclic-Base</object-name>
+		<object-name>Force-Trim</object-name>
+		<object-name>Top-Button</object-name>
+		<object-name>Trigger</object-name>
+		<object-name>Trim-Toggle</object-name>
 		<property>controls/flight/elevator</property>
-		<factor>15</factor>
-		<center>
-			<x-m>-0.05</x-m>
-			<y-m>0</y-m>
-			<z-m>0.15</z-m>
-		</center>
-		<axis><y>-1</y></axis>
+		<factor>8</factor>
+		 <offsets>
+		  <center>
+			<x-m>-0.10139</x-m>
+			<y-m>-0.00253</y-m>
+			<z-m>-0.01615</z-m>
+		  </center>
+		 </offsets>
+		<axis>
+           <x> 0 </x>
+           <y>-1 </y>
+           <z> 0 </z>
+        </axis>
 	</animation>
 
 	<animation>
 		<type>rotate</type>
-		<object-name>mesh2</object-name>
-		<object-name>mesh22</object-name>
-		<object-name>mesh26</object-name>
-		<object-name>mesh24</object-name>
-		<object-name>mesh21</object-name>
-		<object-name>mesh27</object-name>
-		<object-name>mesh3</object-name>
-		<object-name>mesh4</object-name>
-		<object-name>mesh6.001</object-name>
-		<object-name>mesh16.001</object-name>
-		<object-name>mesh16</object-name>
-		<object-name>mesh15</object-name>
-		<object-name>mesh14</object-name>
-		<object-name>mesh18</object-name>
-		<object-name>mesh27.001</object-name>
-		<object-name>mesh12</object-name>
-		<object-name>mesh11</object-name>
-		<object-name>mesh9</object-name>
-		<object-name>mesh20</object-name>
+		<object-name>Cargo-Release</object-name>
+		<object-name>Cyclic Pilot</object-name>
+		<object-name>Cyclic-Base</object-name>
+		<object-name>Force-Trim</object-name>
+		<object-name>Top-Button</object-name>
+		<object-name>Trigger</object-name>
+		<object-name>Trim-Toggle</object-name>
 		<property>controls/flight/aileron</property>
-		<factor>15</factor>
-		<center>
-			
-			<x-m>-0.05</x-m>
-			<y-m>0</y-m>
-			<z-m>0.15</z-m>
-		
-		</center>
-		<axis><x>-1</x></axis>
+		<factor>8</factor>
+		<offsets>
+		  <center>
+			<x-m>-0.10139</x-m>
+			<y-m>-0.00253</y-m>
+			<z-m>-0.01615</z-m>
+		  </center>
+		  </offsets>
+		<axis>
+           <x>-1 </x>
+           <y> 0 </y>
+           <z> 0 </z>
+        </axis>
 	</animation>
 	
 

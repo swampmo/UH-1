@@ -2,17 +2,17 @@
 
 <PropertyList>
 
-	
+	<keyboard>
   
-  <key n="6">
-    <name>Ctrl-f</name>
-    <desc>Surprise</desc>
-    <binding>
-      <command>nasal</command>
-      <script>uh1.theRightMusic.toggle();</script>
-    </binding>
-  </key>
-  
+    <key n="6">
+      <name>Ctrl-f</name>
+      <desc>Surprise</desc>
+      <binding>
+        <command>nasal</command>
+        <script>uh1.theRightMusic.toggle();</script>
+      </binding>
+    </key>
+    
   <key n="101">
     <name>e</name>
     <desc>Sprayer</desc>
@@ -185,5 +185,5 @@
  <max>0</max>
 </binding>
 </key>
-  
+  </keyboard>
 </PropertyList>

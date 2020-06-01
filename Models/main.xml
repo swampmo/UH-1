@@ -81,7 +81,7 @@
 
 <!--Working For Rembrandt-->
 
-<animation>
+<!--animation>
 <object-name>vitres</object-name>
 <object-name>frontdoorglasleft</object-name>
 <object-name>frontdoorglasright</object-name>
@@ -89,7 +89,7 @@
 <object-name>sidedoorglasright</object-name>
 <object-name>slidedoorglasleft</object-name>
 <object-name>slidedoorglasright</object-name>
-</animation>
+</animation-->
 
 <animation>
 <type>noshadow</type>
@@ -160,39 +160,6 @@
         </condition>
     </animation>
 
-
-
-<!--Working For Rembrandt-->
-
-
-
-<!--  DO NOT USE THIS ON REMBRANDT AIRCRAFT. They glow in the  dark 
-
-
-<effect>
-<inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-<object-name>fuselage</object-name>
-<object-name>elevatortrim</object-name>
-<object-name>frontdoorleft</object-name>
-<object-name>frontdoorright</object-name>
-<object-name>sidedoorleft</object-name>
-<object-name>sidedoorright</object-name>
-<object-name>slidedoorleft</object-name>
-<object-name>slidedoorright</object-name>
-<object-name>wirecutter_down</object-name>
-<object-name>wirecutter_up</object-name>
-<object-name>air</object-name>
-<object-name>skid</object-name>
-<object-name>skid2</object-name>
-<object-name>leftside</object-name>
-<object-name>rightside</object-name>
-<object-name>leftslide</object-name>
-<object-name>rightslide</object-name>
-<object-name>supportlampes</object-name>
-</effect>
--->
-
-
  <!-- payloads -->
 <model>
 <path>Aircraft/UH-1/Models/payload/loads.xml</path>
@@ -202,9 +169,6 @@
       <z-m> 0 </z-m>
     </offsets>
 </model> 
-
-
-
 
 <!-- Gouverne de profondeur -->
 <animation>
@@ -227,8 +191,6 @@
 <z> 0 </z>
 </axis>
 </animation>
-
-
 
  <animation>
         <type>select</type>

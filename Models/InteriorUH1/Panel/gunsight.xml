@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>gunsight.ac</path>
+
+<animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>100</max-m>
+ </animation>
+
+ <animation>
+    <type>material</type>
+   <object-name>sightlens</object-name>
+    <condition>
+      <property>/controls/lighting/dash-dim</property>
+    </condition>
+    <emission>
+      <red>   0.90 </red>
+      <green> 0.90 </green>
+      <blue>  0.10 </blue>
+    </emission>
+  </animation>
+ 
+<effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+<object-name>sightlens</object-name>
+</effect>
+
+<animation>
+<name>gunsight</name>
+<object-name>sightmount</object-name>
+<object-name>sightmount2</object-name>
+<object-name>sightmount3</object-name>
+<object-name>sightmount4</object-name>
+<object-name>sightframe</object-name>
+<object-name>knob</object-name>
+<object-name>range</object-name>
+<object-name>lensmount</object-name>
+<object-name>sightlens</object-name>
+</animation>
+
+<animation>
+<type>pick</type>
+<object-name>sightframe</object-name>
+<object-name>knob</object-name>
+<object-name>range</object-name>
+<object-name>lensmount</object-name>
+<object-name>sightlens</object-name>
+<visible>true</visible>
+  <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gunsight/position-norm</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/switch</property>
+      </binding>
+    </action>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>sightframe</object-name>
+<object-name>knob</object-name>
+<object-name>range</object-name>
+<object-name>lensmount</object-name>
+<object-name>sightlens</object-name>
+<property>controls/gunsight/position-norm</property>
+<factor> 77 </factor>
+ <offsets>
+      <x-m>  0.0002</x-m>
+      <y-m>  0.0054 </y-m>
+      <z-m> -0.0487</z-m>
+    </offsets>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+	  </axis>
+</animation>
+
+<!-- restrict the sight to combat mode -->
+<animation>
+        <type>select</type>
+       <object-name>gunsight</object-name>
+  
+        <condition>
+		<not>
+			<or>
+		      
+				 <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>none</value>
+	</equals>
+	
+	
+	<and>
+	
+	<equals>
+	<property>sim/multiplay/generic/string[1]</property>
+    <value>sprayer</value>
+	</equals>
+	
+	</and>
+	
+	<and>
+	
+	<equals>
+	<property>sim/multiplay/generic/string[1]</property>
+    <value>Military_Transport</value>
+	</equals>
+	
+	</and>
+	
+	<and>
+	
+	<equals>
+	<property>sim/multiplay/generic/string[1]</property>
+    <value>luggage</value>
+	</equals>
+	
+	</and>
+	
+	<and>
+	
+	<equals>
+	<property>sim/multiplay/generic/string[1]</property>
+    <value>sar</value>
+	</equals>
+	
+	</and>
+	
+	</or>
+		</not>			
+			</condition>
+    </animation>
+
+</PropertyList>

@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>tracer.ac</path>
+  <path>Aircraft/UH-1/Models/Effects/guns/tracer.ac</path>
 
   <animation>
     <type>dist-scale</type>

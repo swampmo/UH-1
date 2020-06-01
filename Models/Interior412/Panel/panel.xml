@@ -34,7 +34,7 @@
   <model>
     <path>Aircraft/UH-1/Models/Divers/Pedestal/pedestal.xml</path>
   </model>
-  
+
   <!-- Cyclic -->
 
 <model>
@@ -61,18 +61,18 @@
  <!-- collective -->
 
 <model>
-<path>Aircraft/UH-1/Models/Divers/sticks/412collective.xml</path>
+<path>Aircraft/Old-UH-1/Models/Divers/sticks/412collective.xml</path>
 <offsets>
-<x-m> 0.45 </x-m>
-<y-m>  0.26 </y-m>
-<z-m>  -0.4 </z-m>
+<x-m> 0.03579</x-m>
+<y-m> 0.00341</y-m>
+<z-m> 0.05830</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 
 <model>
-<path>Aircraft/UH-1/Models/Divers/sticks/412collective.xml</path>
+<path>Aircraft/Old-UH-1/Models/Divers/sticks/412collective.xml</path>
 <offsets>
 <x-m> 0.45 </x-m>
 <y-m>  -0.83 </y-m>
@@ -80,17 +80,7 @@
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
-  
-<!-- Garmin196 -->
-    <model>
-    	<path>Aircraft/Instruments-3d/garmin196/garmin196_support1.xml</path>
-      	<offsets>
-<x-m> -0.24 </x-m>
-<y-m>  0.04 </y-m>
-<z-m>  0.52 </z-m>
-<pitch-deg> -15 </pitch-deg>
-       </offsets>
-   </model>
+
 
 <!--SCREEN-->
 <model>

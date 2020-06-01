@@ -13,7 +13,7 @@
       <dynamic-view type="bool">true</dynamic-view>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
       <x-offset-m archive="y"> -0.51 </x-offset-m> <!--right-->
-      <y-offset-m archive="y"> -0.13 </y-offset-m> <!--up-->
+      <y-offset-m archive="y"> -0.11 </y-offset-m> <!--up-->
       <z-offset-m archive="y"> -6.64 </z-offset-m> <!--back-->
       <pitch-offset-deg> -20 </pitch-offset-deg>
       <default-field-of-view-deg> 97.5 </default-field-of-view-deg>
@@ -108,7 +108,7 @@
     <internal archive="y">true</internal>
     <config>
       <x-offset-m archive="y">  0.51 </x-offset-m> <!--right-->
-      <y-offset-m archive="y"> -0.13 </y-offset-m> <!--up-->
+      <y-offset-m archive="y"> -0.11 </y-offset-m> <!--up-->
       <z-offset-m archive="y"> -6.64 </z-offset-m> <!--back-->
       <pitch-offset-deg> -20 </pitch-offset-deg>
       <default-field-of-view-deg> 97.5 </default-field-of-view-deg>

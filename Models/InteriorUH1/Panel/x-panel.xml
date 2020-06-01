@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>panel.ac</path>
+
+<animation>
+<type>material</type>
+<object-name>knobs</object-name>
+<object-name>panel</object-name>
+<emission>
+<factor-prop>controls/lighting/dash-dim</factor-prop>
+<red> 0.1 </red>
+<green>0.1 </green>
+<blue>0.1 </blue>
+</emission>
+</animation>
+
+</PropertyList>

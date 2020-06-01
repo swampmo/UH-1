@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Aircraft/UH-1/Models/Interior/Panel/overheadpanel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>overheadPanel</object-name>
+    <emission>
+      <red>  0.01</red>
+      <green>0.01</green>
+      <blue> 0.01</blue>
+    </emission>
+  </animation>
+  
+  <model>
+ <name>rotor brake</name>
+ <path>Aircraft/UH-1/Models/Interior/Panel/panels/clutch_lever/clutch_lever.xml</path>
+ <offsets>
+ <x-m>-0.2</x-m>
+ <y-m>-0.21</y-m>
+ <z-m>0.03</z-m>
+ <pitch-deg>90</pitch-deg>
+ <roll-deg>180</roll-deg>
+ </offsets>
+ 
+ </model>
+
+<!-- ciruit breaker -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/circuit_breaker_panel/circuit_breaker_panel.xml</path>
+    <offsets>
+      <x-m> 0.206</x-m>
+      <y-m>-0.000</y-m>
+      <z-m> 0.052</z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+<!-- left -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/dome_lt_panel/dome_lt_panel.xml</path>
+    <offsets>
+      <x-m> 0.051 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/ext_lts_panel/ext_lts_panel.xml</path>
+    <offsets>
+      <x-m>-0.007 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/wiper_panel/wiper_panel.xml</path>
+    <offsets>
+      <x-m>-0.070 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/cabin_heating_panel/cabin_heating_panel.xml</path>
+    <offsets>
+      <x-m>-0.142 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/empty_panel/empty_panel.xml</path>
+    <offsets>
+      <x-m>-0.223 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/nvg_position_lts_panel/nvg_position_lts_panel.xml</path>
+    <offsets>
+      <x-m>-0.295 </x-m>
+      <y-m> 0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+<!-- right -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/inst_ltg_panel/inst_ltg_panel.xml</path>
+    <offsets>
+      <x-m>-0.020 </x-m>
+      <y-m>-0.087 </y-m>
+      <z-m> 0.052 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/ac_power_panel/ac_power_panel.xml</path>
+    <offsets>
+      <x-m>-0.150</x-m>
+      <y-m>-0.087</y-m>
+      <z-m> 0.052</z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/dc_power_panel/dc_power_panel.xml</path>
+    <offsets>
+      <x-m>-0.226</x-m>
+      <y-m>-0.087</y-m>
+      <z-m> 0.052</z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panels/empty_panel/empty_small_panel.xml</path>
+    <offsets>
+      <x-m>-0.298</x-m>
+      <y-m>-0.087</y-m>
+      <z-m> 0.052</z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

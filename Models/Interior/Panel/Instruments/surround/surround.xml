@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>surround.ac</path>
+	
+  <animation>
+    <object-name>fond</object-name>
+   
+    <object-name>asi-needle1</object-name>
+
+
+  </animation>
+<!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>vitre</object-name>
+</animation>
+<!--Working For Rembrandt-->
+
+ <!--
+
+ <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    
+    <emission>
+      <factor-prop>/controls/lighting/landing-lights</factor-prop>
+  <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+    </emission>
+  </animation>
+	-->
+ 
+
+</PropertyList>
+

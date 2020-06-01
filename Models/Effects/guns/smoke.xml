@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>puff.ac</path>
+  <path>Aircraft/UH-1/Models/Effects/guns/puff.ac</path>
 
   <animation>
     <type>billboard</type>
@@ -27,7 +27,6 @@
     <object-name>puff</object-name>
     <property>sim/time/elapsed-sec</property>
     <factor>0.6</factor>
-    <!-- <offset>0.8</offset> -->
     <min>0.1</min>
     <max>1</max>
   </animation>

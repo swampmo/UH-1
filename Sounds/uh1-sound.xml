@@ -11,14 +11,14 @@
     
     Use Timidity and freepats for make the Wav file.
     -->
-   <!--<door>
+   <door>
       <name>Surprise</name>
       <mode>looped</mode>
       <path>Aircraft/UH-1/Sounds/tonnerre.wav</path>
       <condition>
         <not>
           <equals>
-            <property>/instrumentation/doors/other/position-norm</property>
+            <property>/instrumentation/doors/leftslide/position-norm</property>
             <value>0.0</value>
           </equals>
         </not>
@@ -28,7 +28,7 @@
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>4000</max-dist>
-    </door>-->
+    </door>
     
     <engine>
       <name>engine-start</name>

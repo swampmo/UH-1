@@ -78,9 +78,9 @@
       <entry><ind> 324 </ind><dep>   88 </dep></entry>
     </interpolation>
     <center>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.027 </y-m>
-      <z-m>  0.000 </z-m>
+      <x-m>  0.00338 </x-m>
+      <y-m> -0.02793 </y-m>
+      <z-m>  0.00037 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -99,9 +99,9 @@
       <entry><ind> 324 </ind><dep>   88 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.027 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m> 0.00307 </x-m>
+      <y-m> 0.02806 </y-m>
+      <z-m> 0.00069 </z-m>
     </center>
     <axis>
       <x> -1 </x>

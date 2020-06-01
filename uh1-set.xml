@@ -97,7 +97,6 @@
 <uh1>
 <file>Aircraft/UH-1/Nasal/EngSim.nas</file>
 <file>Aircraft/UH-1/Nasal/uh1.nas</file>
-<file>Aircraft/UH-1/Nasal/lightold.nas</file>
 <file>Aircraft/UH-1/Nasal/Lightsold.nas</file>
 <file>Aircraft/UH-1/Nasal/liveries.nas</file>
 </uh1>
@@ -127,6 +126,7 @@
 </guns>
 
 	<OPRF>
+	<file>Aircraft/UH-1/Nasal/blacklist.nas</file>
    <file>Aircraft/UH-1/Nasal/damage.nas</file>
    <file>Aircraft/UH-1/Nasal/payloads.nas</file>
 	</OPRF>

@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>wiper_panel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>panel</object-name>
+    <object-name>poti</object-name>
+    <object-name>rightswitch</object-name>
+    <object-name>leftswitch</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/console</factor-prop>
+      <red>  0.4</red>
+      <green>0.0</green>
+      <blue> 0.0</blue>
+    </emission>
+  </animation>
+
+  <!-- Wiper left/right/both -->
+  <animation>
+    <type>knob</type>
+    <object-name>leftswitch</object-name>
+    <property>controls/wiper/side</property>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    <factor>25</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/wiper/side</property>
+        <min>-1</min>
+        <max>1</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+<!-- Wiper speed -->
+  <animation>
+    <type>knob</type>
+    <object-name>poti</object-name>
+  <property>controls/wiper/speed</property>
+    <center>
+      <x-m>0.003</x-m>
+      <y-m>0.001</y-m>
+      <z-m>0.000</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <factor>-45</factor>
+    <action>
+      <binding>
+        <command>property-adjust</command>
+       <property>controls/wiper/speed</property>
+        <min>-1</min>
+        <max>3</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Cargo rel. -->
+<!--  <animation>
+    <type>knob</type>
+    <object-name>rightswitch</object-name>
+    <property>controls/switches/cargorel</property>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x> 0</x>
+      <y>-1</y>
+      <z> 0</z>
+    </axis>
+    <factor>30</factor>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cargorel</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+-->
+
+</PropertyList>

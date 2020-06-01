@@ -1,0 +1,63 @@
+<!--emergency float -->
+
+<PropertyList>
+
+
+ <path>Floats.ac</path>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/right_float_small.xml</path>
+  <offsets>
+   <x-m> -6.69910 </x-m>
+   <y-m> 1.26684 </y-m>
+   <z-m> -1.74000 </z-m>
+   <pitch-deg>9.9</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/right_float.xml</path>
+  <offsets>
+   <x-m> -5.30203 </x-m>
+   <y-m> 1.26406 </y-m>
+   <z-m> -1.75000 </z-m>
+   <pitch-deg>-2.8</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/right_float.xml</path>
+  <offsets>
+   <x-m> -3.04634 </x-m>
+   <y-m> 1.26497 </y-m>
+   <z-m> -1.58000 </z-m>
+   <pitch-deg>-7.6</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/left_float_small.xml</path>
+  <offsets>
+   <x-m> -6.69910 </x-m>
+   <y-m> -1.26684 </y-m>
+   <z-m> -1.74000 </z-m>
+   <pitch-deg>9.9</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/left_float.xml</path>
+  <offsets>
+   <x-m> -5.30203 </x-m>
+   <y-m> -1.26406 </y-m>
+   <z-m> -1.75000 </z-m>
+   <pitch-deg>-2.8</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/UH-1/Models/Divers/Floats/left_float.xml</path>
+  <offsets>
+   <x-m> -3.04634 </x-m>
+   <y-m> -1.26497 </y-m>
+   <z-m> -1.58000 </z-m>
+   <pitch-deg>-7.6</pitch-deg>
+  </offsets>
+ </model> 
+
+
+</PropertyList>

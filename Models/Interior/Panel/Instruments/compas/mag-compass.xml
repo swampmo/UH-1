@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>Gyro-compass.ac</path>
+
+  <animation>
+    <object-name>ball-support</object-name>
+    <object-name>centre-line</object-name>
+    <object-name>comp-cover</object-name>
+    <object-name>lock-nut</object-name>
+    <object-name>Ring</object-name>
+
+    <object-name>glass</object-name>
+  </animation>
+    
+ <animation>
+  <type>rotate</type>
+  <object-name>Ring</object-name>
+  <property>orientation/heading-magnetic-deg</property>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+
+  <center>
+   <x-m> 0.05589</x-m>
+   <y-m>-0.00000</y-m>
+   <z-m>-0.01698</z-m>
+  </center>
+ </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Ring</object-name>
+    <object-name>centre-line</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+      <factor-prop>controls/lighting/dash-dim</factor-prop>
+    </emission>
+  </animation>    
+
+</PropertyList>

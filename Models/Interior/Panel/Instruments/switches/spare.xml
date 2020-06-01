@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>switch.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>Circle</object-name>
+    <object-name>SwitchNut</object-name>
+    <object-name>SwitchRot</object-name>
+    <emission>
+          <red>0.001</red>
+        <green>0.001</green>
+        <blue>0.001</blue>
+      <factor-prop>/controls/switches/forcetrim</factor-prop>
+    </emission>
+  </animation>
+        
+ 
+
+</PropertyList>

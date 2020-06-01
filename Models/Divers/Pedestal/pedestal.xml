@@ -19,10 +19,10 @@
 <object-name>board4</object-name>
 <object-name>board4.001</object-name>
 <emission>
-<factor-prop>/controls/lighting/landing-lights</factor-prop>
-<red>   1 </red>
-<green> 1 </green>
-<blue>  1 </blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
+<red> 0.1 </red>
+<green>0.1 </green>
+<blue>0.1 </blue>
 </emission>
 </animation>
 

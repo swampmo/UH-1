@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList>
+
+  <path>warn.ac</path>
+  
+  
+  <animation>
+  <type>material</type>
+  <object-name>fire</object-name>
+    
+  <ambient>
+    <red>0.8</red>
+    <green>0.</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.5</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+
+ 
+ <text>
+  <name>fire</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.009</character-size>
+  <offsets>
+     <x-m>0.0015</x-m>
+     <y-m>-0.016</y-m>
+     <z-m>0.0047</z-m>
+   <roll-deg>0</roll-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FIRE !</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+  <type>select</type>
+  <object-name>fire</object-name>
+  <condition>
+	
+		  <property>/controls/engines/engine[0]/fire</property>
+		<value>true</value>
+  </condition>
+</animation>
+ 
+</PropertyList>
+
+

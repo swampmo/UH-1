@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>controls.ac</path>
+
+ 
+
+
+<!-- pedals -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rightpedalpilot</object-name>
+    <object-name>rightpedalcopilot</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <offset>0</offset>
+    <center>
+      <x-m>-0.3927</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.5087</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>leftpedalpilot</object-name>
+    <object-name>leftpedalcopilot</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <offset>0</offset>
+    <center>
+      <x-m>-0.3927</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-0.5087</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+
+</PropertyList>

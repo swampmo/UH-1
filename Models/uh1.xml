@@ -62,7 +62,7 @@ var probeSwitch = mpPath~"controls/lighting/probe-light-switch";
 var whiteSwitch = mpPath~"controls/lighting/white-light-switch";
 
 #switch this from 1 to 0 if you want to use advanced cyclical fading animation of the the nav lights instead of being stable on when the switch is on
-navStillOn = 1;
+navStillOn = 0;
 
 
 #I need to set listener on some MP transferred properties; this doesn't seem to work well sometimes, so I mirror them to the original location on any change

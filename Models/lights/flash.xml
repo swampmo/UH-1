@@ -32,7 +32,6 @@
     </axis>
   </animation>
 
-  <!--
   <animation>
     <type>select</type>
     <object-name>flash</object-name>
@@ -43,6 +42,5 @@
       </not-equals>
     </condition>
   </animation> 
-  -->
   
 </PropertyList>

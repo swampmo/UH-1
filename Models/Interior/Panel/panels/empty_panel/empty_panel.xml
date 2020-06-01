@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>empty_panel.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>panel</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instltg/console</factor-prop>
+      <red>  0.01</red>
+      <green>0.01</green>
+      <blue> 0.01</blue>
+    </emission>
+  </animation>
+
+</PropertyList>

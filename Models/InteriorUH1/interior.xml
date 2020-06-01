@@ -38,7 +38,7 @@
 
 <!--Working For Rembrandt-->
 
-<animation>
+<!--animation>
 <object-name>vitresint</object-name>
 <object-name>frontdoorglasleftint</object-name>
 <object-name>frontdoorglasrighint</object-name>
@@ -46,7 +46,7 @@
 <object-name>sidedoorglasrightint</object-name>
 <object-name>slidedoorglasleftint</object-name>
 <object-name>slidedoorglasrighint</object-name>
-</animation>
+</animation-->
 
 <animation>
 <type>noshadow</type>
@@ -110,10 +110,28 @@
             </not>
         </condition>
     </animation>
+    
+    <!-- gunsight -->
+<model>
+<name>gunsight</name>
+<path>Aircraft/UH-1/Models/InteriorUH1/Panel/gunsight.xml</path>
+<offsets>
+<x-m>-6.975 </x-m>
+<y-m> 0.450 </y-m>
+<z-m> 0.030 </z-m>
+</offsets>
+</model>
 
-
-
-
+	<animation>
+		<type>select</type>
+		<object-name>gunsight</object-name>
+		<condition>
+		 <equals>
+    <property>sim/multiplay/generic/string[1]</property>
+    <value>guns</value>
+   </equals>
+   </condition>
+	</animation>
 
 <!-- Planche de bord -->
 <model>
@@ -127,15 +145,17 @@
 
 <!--OVERHEADPANEL-->
 <model>
-<path>Aircraft/UH-1/Models/Divers/Overhead/OHpanel.xml</path>
+<path>Aircraft/UH-1/Models/Interior/Panel/overheadpanel.xml</path>
 <offsets>
-<x-m> -6.70 </x-m>
-<y-m>  0.00 </y-m>
-<z-m>  0.11 </z-m>
-<pitch-deg> 84 </pitch-deg>
+<x-m> -6.700 </x-m>
+<y-m>  0.000 </y-m>
+<z-m>  0.110 </z-m>
+<pitch-deg>0</pitch-deg>
+<roll-deg>180</roll-deg>
 </offsets>
 </model>
 
+<!-- DOORS -->
 <animation>
 <name>IntLeftFrontDoor</name>
 <object-name>frontdoorlint</object-name>

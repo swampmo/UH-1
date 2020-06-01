@@ -20,22 +20,21 @@
 		<object-name>gs-scale</object-name>
 		<object-name>ai-dir</object-name>
 		<emission>
-			<red>1.0</red>
-			<green>1.0</green>
-			<blue>1.0</blue>
-			
+		  <red>0.8</red>
+		  <green>0.8</green>
+		  <blue>0.8</blue>
+		  <factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</emission>
 	</animation>
 	
 	<animation>
 		<type>material</type>
 		<object-name>sphere</object-name>
-
 		<emission>
-			<red>1.0</red>
-			<green>1.0</green>
-			<blue>1.0</blue>
-			
+		  <red>0.8</red>
+		  <green>0.8</green>
+		  <blue>0.8</blue>
+		  <factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</emission>
 	</animation>
 	
@@ -44,12 +43,11 @@
 		<object-name>mount</object-name>
 		<object-name>dir-knob</object-name>
 		<object-name>adi-knob</object-name>
-		
 		<emission>
-			<red>1.0</red>
-			<green>1.0</green>
-			<blue>1.0</blue>
-			
+		  <red>0.8</red>
+		  <green>0.8</green>
+		  <blue>0.8</blue>
+		  <factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</emission>
 	</animation>
 	
@@ -67,14 +65,13 @@
 		<object-name>mount</object-name>
 		<object-name>shadow</object-name>
 		<condition>
-			<not><property>/sim/rendering/rembrandt/enabled</property></not>
-			<property>/systems/electrical/outputs/cabin-dim</property>
+			<factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</condition>
 		<emission>
 		  <red>0.8</red>
 		  <green>0.8</green>
 		  <blue>0.8</blue>
-		  <factor-prop>/systems/electrical/outputs/cabin-dim</factor-prop>
+		  <factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</emission>
 	</animation>
 	
@@ -83,14 +80,13 @@
 		<object-name>dir-knob</object-name>
 		<object-name>adi-knob</object-name>
 		<condition>
-			<not><property>/sim/rendering/rembrandt/enabled</property></not>
-			<property>/systems/electrical/outputs/cabin-dim</property>
+			<factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</condition>
 		<emission>
 		  <red>0.3</red>
 		  <green>0.3</green>
 		  <blue>0.3</blue>
-		  <factor-prop>/systems/electrical/outputs/cabin-dim</factor-prop>
+		 <factor-prop>/controls/lighting/dash-dim</factor-prop>
 		</emission>
 	</animation>		
  

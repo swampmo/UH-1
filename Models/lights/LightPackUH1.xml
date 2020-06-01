@@ -58,17 +58,17 @@
   <!-- note: default orientation is up -->
   <model>
     <name>Beacon1</name>
-    <path>Aircraft/UH-1/Models/Lights/Beacon.xml</path>
+    <path>Aircraft/UH-1/Models/Lights/beacon.xml</path>
     <offsets>
       <x-m> -2.5 </x-m>
-<y-m>  0.000 </y-m>
-<z-m>  0.8</z-m>
+      <y-m>0.000</y-m>
+      <z-m>0.8</z-m>
       <pitch-deg>6</pitch-deg>
     </offsets>
   </model>
-<!--<model>
+<model>
     <name>Beacon2</name>
-    <path>Aircraft/UH-1/Models/Lights/Beacon.xml</path>
+    <path>Aircraft/UH-1/Models/Lights/beacon.xml</path>
     <offsets>
       <x-m> -2.574 </x-m>
       <y-m>  0.000 </y-m>
@@ -76,7 +76,7 @@
 
       <pitch-deg>174</pitch-deg>
     </offsets>
-  </model>-->
+  </model>
   
   <!-- landing lights -->
   <!-- a powerful front facing spotlight -->
