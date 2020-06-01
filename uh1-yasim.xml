@@ -62,7 +62,7 @@ mincyclicele="-24" maxcyclicele="24"
 mincyclicail="-19" maxcyclicail="25"
 diameter="14.63" numblades="2"
 weightperblade="120" twist="-10.9"
-chord="0.533" rpm="324"
+chord="0.533" rpm="400"
 relbladecenter="0.5" dynamic=".3"
 rellenflaphinge="0.018"
 sharedflaphinge="1"
@@ -141,7 +141,7 @@ cyclic-factor="0.8"
 rotor-correction-factor="0.98" >
 </rotor>
 
-<rotorgear max-power-engine="820"
+<rotorgear max-power-engine="900"
 max-power-rotor-brake="185"
 rotorgear-friction="3.7"
 engine-prop-factor="0.015"
